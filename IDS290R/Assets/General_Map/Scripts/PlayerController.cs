@@ -7,34 +7,80 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
 
-    public float moveSpeed = 1f;
+    private BoxCollider2D boxCollider;
+    private Vector3 moveDelta;
+    Animator anim;
+    private RaycastHit2D hit;
+    public float moveSpeed = 3f;
+
+    void Start()
+    {
+        boxCollider = GetComponent<BoxCollider2D>();
+        Time.timeScale = 1f;
+        // rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+//        sr = GetComponent<SpriteRenderer>();
+    }
+
+
+    private void FixedUpdate()
+    {
+        float x = Input.GetAxisRaw("Horizontal");
+        float y = Input.GetAxisRaw("Vertical");
+        moveDelta = new Vector3(x, y, 0);
+
+        //right or left
+        if (moveDelta.x != 0)
+            transform.localScale = new Vector3(x, 1, 1);
+
+        /*
+        if (moveDelta.y > 0)
+        {
+            anim.SetBool("down", false);
+            anim.SetBool("up", true);
+        }
+        else if (moveDelta.y < 0) 
+        {
+            anim.SetBool("down", true);
+            anim.SetBool("up", false);
+        }
+        */
+
+        // make sure we can move up/down
+        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime * moveSpeed), LayerMask.GetMask("NPC", "Blocking"));
+        if (hit.collider == null) 
+        {
+            transform.Translate(0, moveSpeed * moveDelta.y * Time.fixedDeltaTime,0);
+        }
+
+        // make sure we can move right/left
+        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(moveDelta.x,0), Mathf.Abs(moveDelta.x * Time.deltaTime * moveSpeed), LayerMask.GetMask("NPC", "Blocking"));
+        if (hit.collider == null)
+        {
+            transform.Translate(moveSpeed * moveDelta.x * Time.fixedDeltaTime,0,0);
+        }
+
+
+    }
+
+
+
+
+    /*
     public ContactFilter2D movementFilter;
     public float collisionOffset = 0.5f;
     public GameObject player;
     public Collider2D coll;
 
     SpriteRenderer sr;
-    Animator anim;
     Vector2 movementInput;
     Rigidbody2D rb;
 
     List<RaycastHit2D> castCollsions = new List<RaycastHit2D>();
 
     // Start is called before the first frame update
-    void Start()
-    {
-        Time.timeScale = 1f;
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-        sr = GetComponent<SpriteRenderer>();
-    }
+    
 
-    private void FixedUpdate()
-    {
-        if (tryMove())
-            Move();
-  
-    }
 
     private void Update()
     {
@@ -101,5 +147,5 @@ public class PlayerController : MonoBehaviour
 
     }
 
-
+    */
 }
