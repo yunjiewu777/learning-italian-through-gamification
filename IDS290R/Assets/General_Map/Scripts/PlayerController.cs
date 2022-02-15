@@ -22,9 +22,32 @@ public class PlayerController : MonoBehaviour
 //        sr = GetComponent<SpriteRenderer>();
     }
 
+    private void Update()
+    {
+        SwitchAnim();
+    }
+
+
+
+    void SwitchAnim()
+    {
+
+        float horizontalMove = Input.GetAxisRaw("Horizontal");
+        float verticalMove = Input.GetAxisRaw("Vertical");
+
+        anim.SetBool("idle", true);
+        if (horizontalMove != 0 | verticalMove != 0)
+            anim.SetBool("idle", false);
+
+    }
+
 
     private void FixedUpdate()
     {
+
+        if (DialogueManager.GetInstance().dialogueIsPlaying)
+            return;
+
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
         moveDelta = new Vector3(x, y, 0);
@@ -82,10 +105,7 @@ public class PlayerController : MonoBehaviour
     
 
 
-    private void Update()
-    {
-        SwitchAnim();
-    }
+    
 
     private void Move()
     {
