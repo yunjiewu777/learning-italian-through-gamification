@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -11,9 +12,9 @@ TagManager:
   - 
   - Water
   - UI
-  - Player
-  - Asteroid
-  - Invulnerable
+  - 
+  - Blocking
+  - NPC
   - 
   - 
   - 
@@ -38,9 +39,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: BG
-    uniqueID: 2790311699
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
