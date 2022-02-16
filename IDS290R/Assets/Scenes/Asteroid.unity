@@ -454,8 +454,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1504655597
-  m_SortingLayer: -1
+  m_SortingLayerID: -1114156567
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f794629b5feb4254d8f9e0e648ee7f56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -494,14 +494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d979ab6d4587e4d4eb9c368d55a0fd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionPool:
-  - Question 1
-  - Question 2
-  - Question 3
-  - Question 4
-  - Question 5
   questionText: {fileID: 1271514246}
-  questionNum: 0
+  questionNum: 2
 --- !u!1 &1178422438
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,7 +906,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1942692457
-  m_SortingLayer: 1
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 613435604629981061, guid: 5e7516b282066fd44b46922ff1ecc31d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1049,12 +1043,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d979ab6d4587e4d4eb9c368d55a0fd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionPool:
-  - Question 1
-  - Question 2
-  - Question 3
-  - Question 4
-  - Question 5
   questionText: {fileID: 0}
   questionNum: 0
 --- !u!1 &2096912685
