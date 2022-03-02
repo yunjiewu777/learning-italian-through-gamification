@@ -11,15 +11,16 @@ public class PlayerController : MonoBehaviour
     private Vector3 moveDelta;
     Animator anim;
     private RaycastHit2D hit;
-    public float moveSpeed = 3f;
-
+    public float moveSpeed = 7f;
+    public VectorValue startingPosition;
     void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
         Time.timeScale = 1f;
         // rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-//        sr = GetComponent<SpriteRenderer>();
+        //        sr = GetComponent<SpriteRenderer>();
+        transform.position = startingPosition.initialValue;
     }
 
     private void Update()

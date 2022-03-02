@@ -6,13 +6,18 @@ using UnityEngine.SceneManagement;
 public class Enter : MonoBehaviour
 {
 
-    public string enter;
+    public string sceneToLoad;
+    public Vector2 playerPosition;
+    public VectorValue plyaerStorage;
+
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            SceneManager.LoadScene(enter);
+            plyaerStorage.initialValue = playerPosition;
+            SceneManager.LoadScene(sceneToLoad);
         }
     }
 }
