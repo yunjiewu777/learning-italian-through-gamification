@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -11,10 +12,16 @@ public class DialogueManager : MonoBehaviour
     [Header("Dialouge UI")]
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI dialogueText;
+    [SerializeField] private TextMeshProUGUI displayNameText;
+    [SerializeField] private string sceneToLoad;
+    private bool loading = false;
 
     [Header("Choice UI")]
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
+
+    private const string SPEAKER_TAG = "speaker";
+    private const string SCENE = "scene";
 
 
     private Story currentStory;
@@ -34,8 +41,21 @@ public class DialogueManager : MonoBehaviour
     {
         if (!dialogueIsPlaying)
             return;
-        if (currentStory.currentChoices.Count == 0 && (Input.GetKeyDown(KeyCode.Space)|| Input.GetMouseButtonDown(0)))
+        if (currentStory.currentChoices.Count == 0 && (Input.GetKeyDown(KeyCode.Space)|| Input.GetMouseButtonDown(0)) && !loading)
             ContinueStory();
+        if(sceneToLoad != "")
+        {
+            StartCoroutine(DelaySceneLoad());
+        }
+        
+    }
+
+    IEnumerator DelaySceneLoad()
+    {
+        loading = true;
+        yield return new WaitForSeconds(0.5f); // Wait 1 seconds
+        ExitDialogueMode();
+        SceneManager.LoadScene(sceneToLoad); // Change to the ID or Name of the scene to load
     }
 
     public static DialogueManager GetInstance()
@@ -58,11 +78,42 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+    private void HandleTags(List<string> currentTags)
+    {
+        foreach (string tag in currentTags)
+        {
+            string[] splitTags = tag.Split(':');
+            if (splitTags.Length != 2) 
+            {
+               
+            }
+            string tagKey = splitTags[0].Trim();
+            string tagValue = splitTags[1].Trim();
+
+            switch (tagKey)
+            {
+                case SPEAKER_TAG:
+                    displayNameText.text = tagValue;
+                    break;
+                case SCENE:
+                    sceneToLoad = tagValue;
+                    break;
+                default:
+                    break;
+            }
+        }
+    
+    }
+
     public void EnterDialogueMode(TextAsset inkJSON)
     {
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
+
+        displayNameText.text = "???";
+        sceneToLoad = "";
+
 
         ContinueStory();
     }
@@ -81,6 +132,7 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueText.text = currentStory.Continue();
             DisplayChoices();
+            HandleTags(currentStory.currentTags);
         }
         else
             ExitDialogueMode();

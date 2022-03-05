@@ -7810,6 +7810,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 974573672, guid: 1b8c37f6de3ad7e4d9ae1dd98711ac3d, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 03b9214ba79add849a7c6d87d263a381, type: 3}
     - target: {fileID: 8637766040357324946, guid: 1b8c37f6de3ad7e4d9ae1dd98711ac3d, type: 3}
       propertyPath: dialogueText
       value: 
