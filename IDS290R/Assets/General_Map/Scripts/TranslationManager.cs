@@ -6,9 +6,8 @@ using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class DialogueManager : MonoBehaviour
+public class TranslationManager : MonoBehaviour
 {
-
     [Header("Dialouge UI")]
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI dialogueText;
@@ -22,14 +21,12 @@ public class DialogueManager : MonoBehaviour
 
     private const string SPEAKER_TAG = "speaker";
     private const string SCENE = "scene";
-    
+
 
 
     private Story currentStory;
-
-    private static DialogueManager instance;
+    private static TranslationManager instance;
     public bool dialogueIsPlaying { get; private set; }
-
 
     private void Awake()
     {
@@ -44,19 +41,6 @@ public class DialogueManager : MonoBehaviour
             return;
         if (currentStory.currentChoices.Count == 0 && Input.GetKeyDown(KeyCode.Space) && !loading)
             ContinueStory();
-        if(sceneToLoad != "")
-        {
-            StartCoroutine(DelaySceneLoad());
-        }
-        
-    }
-
-    public void Click()
-    {
-        if (!dialogueIsPlaying)
-            return;
-        if (currentStory.currentChoices.Count == 0 && !loading)
-            ContinueStory();
         if (sceneToLoad != "")
         {
             StartCoroutine(DelaySceneLoad());
@@ -68,12 +52,6 @@ public class DialogueManager : MonoBehaviour
         loading = true;
         yield return new WaitForSeconds(0.5f); // Wait 1 seconds
         ExitDialogueMode();
-        SceneManager.LoadScene(sceneToLoad); // Change to the ID or Name of the scene to load
-    }
-
-    public static DialogueManager GetInstance()
-    {
-        return instance;        
     }
 
     private void Start()
@@ -96,9 +74,9 @@ public class DialogueManager : MonoBehaviour
         foreach (string tag in currentTags)
         {
             string[] splitTags = tag.Split(':');
-            if (splitTags.Length != 2) 
+            if (splitTags.Length != 2)
             {
-               
+
             }
             string tagKey = splitTags[0].Trim();
             string tagValue = splitTags[1].Trim();
@@ -115,14 +93,14 @@ public class DialogueManager : MonoBehaviour
                     break;
             }
         }
-    
+
     }
 
     public void EnterDialogueMode(TextAsset inkJSON)
     {
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
-        dialoguePanel.SetActive(true);
+        dialoguePanel.SetActive(false);
 
         displayNameText.text = "???";
         sceneToLoad = "";
@@ -134,9 +112,8 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
-        dialogueText.text = "";    
+        dialogueText.text = "";
     }
-
 
     private void ContinueStory()
     {
@@ -172,20 +149,25 @@ public class DialogueManager : MonoBehaviour
         //StartCoroutine(SelectFirstChoice());
     }
 
-
-    /*
-    private IEnumerator SelectFirstChoice()
-    {
-        EventSystem.current.SetSelectedGameObject(null);
-        yield return new WaitForEndOfFrame();
-        EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
-    }
-    */
-
-    public void MakeChoice(int choiceIndex) 
+    public void MakeChoice(int choiceIndex)
     {
         currentStory.ChooseChoiceIndex(choiceIndex);
         ContinueStory();
     }
+    public static TranslationManager GetInstance()
+    {
+        return instance;
+    }
 
+    public void Click()
+    {
+        if (!dialogueIsPlaying)
+            return;
+        if (currentStory.currentChoices.Count == 0 && !loading)
+            ContinueStory();
+        if (sceneToLoad != "")
+        {
+            StartCoroutine(DelaySceneLoad());
+        }
+    }
 }

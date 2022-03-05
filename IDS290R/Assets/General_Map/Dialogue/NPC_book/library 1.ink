@@ -1,19 +1,20 @@
 -> main
 
 === main===
+
 // start converstaion
-Cosa vuoi?
+Cosa vuoi? #speaker:Librarian
     + [Chiacchierata?]
         -> chat
     + [Mi dai una sfida?]
-        Sure.
+        Sure. #scene:Asteroid
         -> DONE
     + [Niente, saluta.]
         Ok ciao.
         -> DONE
 
 === chat ===
-Come stai?
+Come stai? 
     * [Buona]
     * [Bad]
 - OK

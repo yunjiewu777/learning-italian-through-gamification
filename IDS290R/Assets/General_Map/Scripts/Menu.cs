@@ -9,9 +9,16 @@ public class Menu : MonoBehaviour
     public AudioMixer mixer;
     public GameObject pauseMenu;
     bool isShow;
+    public GameObject taskPanel;
+    private bool isShowTask;
+
+    public GameObject transPanel;
+    private bool isShowTrans;
     public void Start()
     {
         isShow = false;
+        isShowTrans = false;
+        isShowTask = false;
     }
     public void Update()
     {
@@ -54,6 +61,52 @@ public class Menu : MonoBehaviour
                 pauseMenu.SetActive(false);
                 Time.timeScale = 1f;
             }
+        }
+    }
+
+
+
+    public void ShowPause()
+    {
+        if (!isShow)
+        {
+            isShow = !isShow;
+            pauseMenu.SetActive(true);
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            isShow = !isShow;
+            pauseMenu.SetActive(false);
+            Time.timeScale = 1f;
+        }
+    }
+
+    public void ShowTrans()
+    {
+        if (!isShowTrans)
+        {
+            isShowTrans = !isShowTrans;
+            transPanel.SetActive(true);
+        }
+        else
+        {
+            isShowTrans = !isShowTrans;
+            transPanel.SetActive(false);
+        }
+    }
+
+    public void ShowTask()
+    {
+        if (!isShowTask)
+        {
+            isShowTask = !isShowTask;
+            taskPanel.SetActive(true);
+        }
+        else
+        {
+            isShowTask = !isShowTask;
+            taskPanel.SetActive(false);
         }
     }
 

@@ -10,6 +10,7 @@ public class DialogueTrigger : MonoBehaviour
 
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
+    [SerializeField] private TextAsset inkJSONTrans;
 
     private bool playerInRange;
 
@@ -27,6 +28,7 @@ public class DialogueTrigger : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+                TranslationManager.GetInstance().EnterDialogueMode(inkJSONTrans);
             }
 
         }

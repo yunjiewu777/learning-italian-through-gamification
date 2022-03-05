@@ -54,7 +54,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 0e2b43b4c0205bd489a4c3cd1251c4c6, type: 2}
-  m_audioClip: {fileID: 8300000, guid: f5c51a531df93cd4b9575890e0cb3746, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 03b9214ba79add849a7c6d87d263a381, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
@@ -150,6 +150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8637766040357324947}
   - component: {fileID: 8637766040357324946}
+  - component: {fileID: 583457163}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -187,7 +188,30 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   displayNameText: {fileID: 0}
   sceneToLoad: 
-  choices: []
+  choices:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &583457163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8637766040357324948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d0669f192590fb4f90604150502ed8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 0}
+  dialogueText: {fileID: 0}
+  displayNameText: {fileID: 0}
+  sceneToLoad: 
+  choices:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &8637766040570065792
 GameObject:
   m_ObjectHideFlags: 0

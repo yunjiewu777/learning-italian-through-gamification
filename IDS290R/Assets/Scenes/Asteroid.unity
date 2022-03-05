@@ -472,7 +472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Book
-  playerPosition: {x: 4.17, y: -0.58}
+  playerPosition: {x: 3.81, y: -2.26}
   plyaerStorage: {fileID: 11400000, guid: a34534bd60b179447a2d9d07e23f2ccf, type: 2}
   score: 0
   minigame: {fileID: 11400000, guid: a49de3937529e414089dcd2629e18c6f, type: 2}
