@@ -29,8 +29,8 @@ public class PauseMenu : MonoBehaviour
     public void Exit()
     {
         plyaerStorage.initialValue = playerPosition;
-        if (score > minigame.score)
-            minigame.score = score;
+        if (score > minigame.score[0])
+            minigame.score[0] = score;
         SceneManager.LoadScene(sceneToLoad);
     }
 }

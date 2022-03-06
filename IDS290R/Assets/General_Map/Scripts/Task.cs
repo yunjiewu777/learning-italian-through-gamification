@@ -6,8 +6,5 @@ using UnityEngine;
 public class Task : ScriptableObject
 {
     public string taskName;
-    public int score;
-
-
-
+    public List<int> score;
 }
