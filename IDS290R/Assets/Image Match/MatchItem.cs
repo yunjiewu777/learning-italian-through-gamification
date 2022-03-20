@@ -11,7 +11,7 @@ public class MatchItem : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoin
     private GameObject line;
 
     public void OnPointerDown(PointerEventData eventData){
-        line = Instantiate(linePrefab, transform.position, Quaternion.identity, transform.parent.parent.parent);
+        line = Instantiate(linePrefab, transform.position, Quaternion.identity, transform.parent.parent);
         UpdateLine(eventData.position);
     }
 

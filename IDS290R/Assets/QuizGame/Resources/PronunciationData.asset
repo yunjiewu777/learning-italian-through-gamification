@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f611d797432e3f846885b2b12fde5f35, type: 3}
+  m_Name: PronunciationData
+  m_EditorClassIdentifier: 
+  categoryName: Pronunciation
+  questions:
+  - questionInfo: What is the meaning of this word?
+    questionType: 2
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: ff58498eadc34ba4a8c0cccaa7023c00, type: 3}
+    videoClip: {fileID: 0}
+    options:
+    - Hello!
+    - Bye!
+    - Great!
+    - Thanks!
+    correctAns: Hello!
+  - questionInfo: What is the meaning of this word?
+    questionType: 2
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: d8583e01b5e01fa47a31861c01389408, type: 3}
+    videoClip: {fileID: 0}
+    options:
+    - Great!
+    - Thanks!
+    - Please!
+    - Bye!
+    correctAns: Please!
+  - questionInfo: What is the meaning of this word?
+    questionType: 2
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 181ba5f3fd87db549a037f3e7e826bb9, type: 3}
+    videoClip: {fileID: 0}
+    options:
+    - Hello!
+    - Thank you!
+    - Please!
+    - Bye!
+    correctAns: Thank you!
