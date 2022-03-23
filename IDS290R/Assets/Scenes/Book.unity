@@ -7632,7 +7632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualCue: {fileID: 258291895}
   inkJSON: {fileID: 4900000, guid: b5ca8897bb349d74482ca25197f9674c, type: 3}
-  inkJSONTrans: {fileID: 4900000, guid: fa7004e38bb254d44bca5710780db0eb, type: 3}
+  inkJSONTrans: {fileID: 4900000, guid: 26e72e102e247e34aa37d4592e1079eb, type: 3}
 --- !u!1001 &1541507395764438518
 PrefabInstance:
   m_ObjectHideFlags: 0

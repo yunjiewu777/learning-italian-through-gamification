@@ -6653,6 +6653,10 @@ PrefabInstance:
       propertyPath: choices.Array.data[2]
       value: 
       objectReference: {fileID: 1982843253}
+    - target: {fileID: 974573672, guid: 1b8c37f6de3ad7e4d9ae1dd98711ac3d, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f5c51a531df93cd4b9575890e0cb3746, type: 3}
     - target: {fileID: 8637766040357324946, guid: 1b8c37f6de3ad7e4d9ae1dd98711ac3d, type: 3}
       propertyPath: dialogueText
       value: 

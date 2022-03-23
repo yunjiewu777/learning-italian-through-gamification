@@ -7,6 +7,8 @@ public class DialogueTrigger : MonoBehaviour
     [Header("Visual Cue")]
     [SerializeField] private GameObject visualCue;
 
+    public string speaker;
+    public Level level;
 
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
@@ -16,6 +18,8 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Awake()
     {
+        inkJSON = Resources.Load<TextAsset>("Dialogue/" + level.difficultyLevel + "/" + speaker + "_i");
+        inkJSONTrans = Resources.Load<TextAsset>("Dialogue/" + level.difficultyLevel + "/" + speaker + "_e");
         playerInRange = false;
         visualCue.SetActive(false);
     }

@@ -8,12 +8,13 @@ using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
-
+    [SerializeField] private GameObject levelPanel;
     [Header("Dialouge UI")]
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI displayNameText;
     [SerializeField] private string sceneToLoad;
+    [SerializeField] private string level;
     private bool loading = false;
 
     [Header("Choice UI")]
@@ -22,7 +23,7 @@ public class DialogueManager : MonoBehaviour
 
     private const string SPEAKER_TAG = "speaker";
     private const string SCENE = "scene";
-    
+    private const string LEVEL = "level";
 
 
     private Story currentStory;
@@ -48,6 +49,10 @@ public class DialogueManager : MonoBehaviour
         {
             StartCoroutine(DelaySceneLoad());
         }
+        if (level == "change")
+        {
+            StartCoroutine(ChangeLevel());
+        }
         
     }
 
@@ -61,6 +66,10 @@ public class DialogueManager : MonoBehaviour
         {
             StartCoroutine(DelaySceneLoad());
         }
+        if (level == "change")
+        {
+            StartCoroutine(ChangeLevel());
+        }
     }
 
     IEnumerator DelaySceneLoad()
@@ -70,6 +79,15 @@ public class DialogueManager : MonoBehaviour
         ExitDialogueMode();
         SceneManager.LoadScene(sceneToLoad); // Change to the ID or Name of the scene to load
     }
+
+
+    IEnumerator ChangeLevel()
+    {
+        yield return new WaitForSeconds(0.3f); // Wait 1 seconds
+        ExitDialogueMode();
+        levelPanel.SetActive(true);
+    }
+
 
     public static DialogueManager GetInstance()
     {
@@ -111,6 +129,9 @@ public class DialogueManager : MonoBehaviour
                 case SCENE:
                     sceneToLoad = tagValue;
                     break;
+                case LEVEL:
+                    level = tagValue;
+                    break;
                 default:
                     break;
             }
@@ -126,6 +147,7 @@ public class DialogueManager : MonoBehaviour
 
         displayNameText.text = "???";
         sceneToLoad = "";
+        level = "";
 
         ContinueStory();
     }
