@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Asteroid.unity
     guid: a8dd5094ce6e0e647b17faff916d3e50
   - enabled: 1
+    path: Assets/Scenes/AsteroidMainMenu.unity
+    guid: 1bb98765eea58ce4db13601d7297ad8b
+  - enabled: 1
     path: Assets/Scenes/BigHouse.unity
     guid: 17c3b5925dadb304ba1037396752eefd
   - enabled: 1

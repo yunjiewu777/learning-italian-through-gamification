@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
     public AudioMixer mixer;
     public GameObject pauseMenu;
+    public Level level;
+    public Text levelDisplay;
     bool isShow;
     public GameObject taskPanel;
     private bool isShowTask;
@@ -16,6 +19,7 @@ public class Menu : MonoBehaviour
     private bool isShowTrans;
     public void Start()
     {
+        levelDisplay.text = "Level " + level.difficultyLevel.ToString();
         isShow = false;
         isShowTrans = false;
         isShowTask = false;
@@ -63,8 +67,6 @@ public class Menu : MonoBehaviour
             }
         }
     }
-
-
 
     public void ShowPause()
     {
