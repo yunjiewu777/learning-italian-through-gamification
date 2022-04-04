@@ -18,16 +18,16 @@ MonoBehaviour:
     id: 0
     needGoods:
       goodsType: 0
-      goodsCount: 0400000000000000000000000000000000000000
+      goodsCount: 0400000001000000010000000100000001000000
   - name: 
     des: Match
     id: 1
     needGoods:
       goodsType: 0
-      goodsCount: 0400000000000000000000000000000000000000
+      goodsCount: 0000000000000000000000000000000000000000
   - name: 
     des: Audio
     id: 2
     needGoods:
       goodsType: 0
-      goodsCount: 0400000000000000000000000000000000000000
+      goodsCount: 0000000000000000000000000000000000000000

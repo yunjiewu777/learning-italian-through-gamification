@@ -27,6 +27,7 @@ public class Menu : MonoBehaviour
     public void Update()
     {
         PauseGame();
+        TaskPanel();
     }
     public void PlayGame()
     {
@@ -71,6 +72,24 @@ public class Menu : MonoBehaviour
                 isShow = !isShow;
                 pauseMenu.SetActive(false);
                 Time.timeScale = 1f;
+            }
+        }
+    }
+
+
+    void TaskPanel()
+    {
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            if (!isShowTask)
+            {
+                isShowTask = !isShowTask;
+                taskPanel.SetActive(true);
+            }
+            else
+            {
+                isShowTask = !isShowTask;
+                taskPanel.SetActive(false);
             }
         }
     }
