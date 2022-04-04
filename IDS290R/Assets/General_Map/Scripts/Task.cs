@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu (fileName = "New Minigame", menuName = "Minigame")]
+[CreateAssetMenu (fileName = "New Record", menuName = "Record")]
 public class Task : ScriptableObject
 {
     public string taskName;
-    public List<int> score;
+    public int[] score;
 }

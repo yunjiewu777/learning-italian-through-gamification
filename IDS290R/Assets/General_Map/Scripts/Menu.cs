@@ -30,7 +30,14 @@ public class Menu : MonoBehaviour
     }
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (System.IO.File.Exists(Application.persistentDataPath + "/" + "SaveTest.dat"))
+        {
+            SaveManager.GetInstance().Load();
+            SceneManager.LoadScene("Town");
+        }
+            
+        else
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void QuitGame()
@@ -114,6 +121,7 @@ public class Menu : MonoBehaviour
 
     public void Main()
     {
+        SaveManager.GetInstance().Save();
         SceneManager.LoadScene(0);
     }
 }

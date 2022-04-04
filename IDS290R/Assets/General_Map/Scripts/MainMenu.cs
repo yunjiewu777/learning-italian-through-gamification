@@ -11,8 +11,15 @@ public class MainMenu : MonoBehaviour
 
     public void Enter()
     {
-        plyaerStorage.initialValue = playerPosition;
-        SceneManager.LoadScene("Town");
 
+        if (System.IO.File.Exists(Application.persistentDataPath + "/" + "SaveTest.dat"))
+        {
+            SaveManager.GetInstance().Load();
+            plyaerStorage.initialValue = playerPosition;
+            SceneManager.LoadScene("Town");
+        }
+        else
+            SceneManager.LoadScene("Asteroid");
     }
+
 }

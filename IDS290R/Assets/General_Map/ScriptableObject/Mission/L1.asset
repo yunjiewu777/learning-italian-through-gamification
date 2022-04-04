@@ -13,18 +13,21 @@ MonoBehaviour:
   m_Name: L1
   m_EditorClassIdentifier: 
   missionTasks:
-  - des: Asteroid
+  - name: 
+    des: Asteroid
     id: 0
     needGoods:
       goodsType: 0
-      goodsCount: 4
-  - des: Match
+      goodsCount: 0400000000000000000000000000000000000000
+  - name: 
+    des: Match
     id: 1
     needGoods:
       goodsType: 0
-      goodsCount: 4
-  - des: Audio
+      goodsCount: 0400000000000000000000000000000000000000
+  - name: 
+    des: Audio
     id: 2
     needGoods:
       goodsType: 0
-      goodsCount: 4
+      goodsCount: 0400000000000000000000000000000000000000

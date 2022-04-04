@@ -12,12 +12,13 @@ public enum GoodsType
 public struct MissionGoods
 {
     public GoodsType goodsType;
-    public int goodsCount;
+    public int[] goodsCount;
 
 }
 [System.Serializable]
 public struct MissionData
 {
+    public string name;
     public string des;
     public int id;
     public MissionGoods needGoods;

@@ -7,11 +7,13 @@ using UnityEngine.UI;
 public class PauseMenu : MonoBehaviour
 {
     public string sceneToLoad;
-    public Vector2 playerPosition;
     public VectorValue plyaerStorage;
     public int score;
-    public Task minigame;
+    public Level level;
     public Text scoreText;
+    public Task minigame;
+    public int gameID;
+    public string sceneToSave;
 
     // Update is called once per frame
     void Start()
@@ -28,9 +30,11 @@ public class PauseMenu : MonoBehaviour
 
     public void Exit()
     {
-        plyaerStorage.initialValue = playerPosition;
-        if (score > minigame.score[0])
-            minigame.score[0] = score;
+        if (score > minigame.score[level.difficultyLevel-1])
+        {
+            minigame.score[level.difficultyLevel-1] = score;
+            SaveManager.GetInstance().Save();
+        }
         SceneManager.LoadScene(sceneToLoad);
     }
 }
