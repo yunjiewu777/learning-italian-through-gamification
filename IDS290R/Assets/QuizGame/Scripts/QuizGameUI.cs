@@ -117,9 +117,11 @@ public class QuizGameUI : MonoBehaviour
         {
             //PlayOneShot
             questionAudio.PlayOneShot(question.audioClip);
+            //questionAudio.Play();
             //wait for few seconds
             yield return new WaitForSeconds(audioLength + 2.0f);
             //play again
+            
             StartCoroutine(PlayAudio());
         }
         else //if questionType is not audio
