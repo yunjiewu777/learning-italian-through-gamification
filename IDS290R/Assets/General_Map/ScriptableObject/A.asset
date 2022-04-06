@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9658a949ffbdd4ab73ee8a491e1727, type: 3}
   m_Name: A
   m_EditorClassIdentifier: 
-  taskName: Asteriod
+  taskName: 
   score: 0000000000000000000000000000000000000000

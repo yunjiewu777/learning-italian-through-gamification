@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1191376589, guid: 757667fb15b68844fb07ab394fad114f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1680904753, guid: 757667fb15b68844fb07ab394fad114f, type: 3}
       propertyPath: level
       value: 
@@ -234,6 +238,10 @@ PrefabInstance:
       propertyPath: level
       value: 
       objectReference: {fileID: 11400000, guid: 8aa2e057905149f48a4d5a9d4c1b38f3, type: 2}
+    - target: {fileID: 8832640403384998166, guid: 757667fb15b68844fb07ab394fad114f, type: 3}
+      propertyPath: minigame
+      value: 
+      objectReference: {fileID: 11400000, guid: 84263c8a9684ebc48a11ff1eece592f9, type: 2}
     - target: {fileID: 8832640404283656042, guid: 757667fb15b68844fb07ab394fad114f, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -758,6 +766,7 @@ GameObject:
   - component: {fileID: 389564904}
   - component: {fileID: 389564903}
   - component: {fileID: 389564902}
+  - component: {fileID: 389564905}
   m_Layer: 5
   m_Name: 4
   m_TagString: Untagged
@@ -879,6 +888,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389564900}
   m_CullTransparentMesh: 1
+--- !u!114 &389564905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389564900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fc569e796d28d4f96f439ec4acdbec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: {fileID: 11400000, guid: 8aa2e057905149f48a4d5a9d4c1b38f3, type: 2}
+  missionDataBase: {fileID: 11400000, guid: 81dfbaef329886742b097b732eadf1da, type: 2}
+  currentL: 4
+  bu: {fileID: 0}
 --- !u!1 &526239512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,7 +1115,7 @@ PrefabInstance:
     - target: {fileID: 79809566, guid: 7acf108b4bc348e43bb6eee95a6226e0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1542635988}
+      objectReference: {fileID: 0}
     - target: {fileID: 1496131496, guid: 7acf108b4bc348e43bb6eee95a6226e0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1102,7 +1127,7 @@ PrefabInstance:
     - target: {fileID: 1541507395160088373, guid: 7acf108b4bc348e43bb6eee95a6226e0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1542635988}
+      objectReference: {fileID: 0}
     - target: {fileID: 1541507395239904782, guid: 7acf108b4bc348e43bb6eee95a6226e0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1110,7 +1135,7 @@ PrefabInstance:
     - target: {fileID: 1541507395239904782, guid: 7acf108b4bc348e43bb6eee95a6226e0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1542635988}
+      objectReference: {fileID: 0}
     - target: {fileID: 1541507395480818836, guid: 7acf108b4bc348e43bb6eee95a6226e0, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1206,7 +1231,7 @@ PrefabInstance:
     - target: {fileID: 1541507395659558736, guid: 7acf108b4bc348e43bb6eee95a6226e0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1542635988}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7acf108b4bc348e43bb6eee95a6226e0, type: 3}
 --- !u!114 &616686982 stripped
@@ -3872,6 +3897,7 @@ GameObject:
   - component: {fileID: 909061019}
   - component: {fileID: 909061018}
   - component: {fileID: 909061017}
+  - component: {fileID: 909061020}
   m_Layer: 5
   m_Name: 2
   m_TagString: Untagged
@@ -3993,6 +4019,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909061015}
   m_CullTransparentMesh: 1
+--- !u!114 &909061020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909061015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fc569e796d28d4f96f439ec4acdbec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: {fileID: 11400000, guid: 8aa2e057905149f48a4d5a9d4c1b38f3, type: 2}
+  missionDataBase: {fileID: 11400000, guid: 81dfbaef329886742b097b732eadf1da, type: 2}
+  currentL: 2
+  bu: {fileID: 0}
 --- !u!1 &1085944961
 GameObject:
   m_ObjectHideFlags: 0
@@ -7312,6 +7354,7 @@ GameObject:
   - component: {fileID: 1111662432}
   - component: {fileID: 1111662431}
   - component: {fileID: 1111662430}
+  - component: {fileID: 1111662433}
   m_Layer: 5
   m_Name: 3
   m_TagString: Untagged
@@ -7433,6 +7476,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111662428}
   m_CullTransparentMesh: 1
+--- !u!114 &1111662433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111662428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fc569e796d28d4f96f439ec4acdbec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: {fileID: 11400000, guid: 8aa2e057905149f48a4d5a9d4c1b38f3, type: 2}
+  missionDataBase: {fileID: 11400000, guid: 81dfbaef329886742b097b732eadf1da, type: 2}
+  currentL: 3
+  bu: {fileID: 0}
 --- !u!114 &1213488342 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7687844749479488702, guid: 757667fb15b68844fb07ab394fad114f, type: 3}
@@ -7733,17 +7792,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1542601031}
   m_CullTransparentMesh: 1
---- !u!114 &1542635988 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 583457163, guid: 1b8c37f6de3ad7e4d9ae1dd98711ac3d, type: 3}
-  m_PrefabInstance: {fileID: 8637766039918404111}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d0669f192590fb4f90604150502ed8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1570052900
 GameObject:
   m_ObjectHideFlags: 0
@@ -8412,6 +8460,7 @@ GameObject:
   - component: {fileID: 1837379861}
   - component: {fileID: 1837379860}
   - component: {fileID: 1837379859}
+  - component: {fileID: 1837379862}
   m_Layer: 5
   m_Name: 1
   m_TagString: Untagged
@@ -8533,6 +8582,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837379857}
   m_CullTransparentMesh: 1
+--- !u!114 &1837379862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837379857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fc569e796d28d4f96f439ec4acdbec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: {fileID: 11400000, guid: 8aa2e057905149f48a4d5a9d4c1b38f3, type: 2}
+  missionDataBase: {fileID: 11400000, guid: 81dfbaef329886742b097b732eadf1da, type: 2}
+  currentL: 1
+  bu: {fileID: 0}
 --- !u!1 &1911650515
 GameObject:
   m_ObjectHideFlags: 0
@@ -9554,6 +9619,7 @@ GameObject:
   - component: {fileID: 2110449208}
   - component: {fileID: 2110449207}
   - component: {fileID: 2110449206}
+  - component: {fileID: 2110449209}
   m_Layer: 5
   m_Name: 5
   m_TagString: Untagged
@@ -9675,6 +9741,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110449204}
   m_CullTransparentMesh: 1
+--- !u!114 &2110449209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110449204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fc569e796d28d4f96f439ec4acdbec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: {fileID: 11400000, guid: 8aa2e057905149f48a4d5a9d4c1b38f3, type: 2}
+  missionDataBase: {fileID: 11400000, guid: 81dfbaef329886742b097b732eadf1da, type: 2}
+  currentL: 5
+  bu: {fileID: 0}
 --- !u!1 &2144082994
 GameObject:
   m_ObjectHideFlags: 0

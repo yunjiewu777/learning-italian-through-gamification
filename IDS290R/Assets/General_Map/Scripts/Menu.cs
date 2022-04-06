@@ -27,10 +27,18 @@ public class Menu : MonoBehaviour
     public void Update()
     {
         PauseGame();
+        TaskPanel();
     }
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (System.IO.File.Exists(Application.persistentDataPath + "/" + "SaveTest.dat"))
+        {
+            SaveManager.GetInstance().Load();
+            SceneManager.LoadScene("Town");
+        }
+            
+        else
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void QuitGame()
@@ -64,6 +72,24 @@ public class Menu : MonoBehaviour
                 isShow = !isShow;
                 pauseMenu.SetActive(false);
                 Time.timeScale = 1f;
+            }
+        }
+    }
+
+
+    void TaskPanel()
+    {
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            if (!isShowTask)
+            {
+                isShowTask = !isShowTask;
+                taskPanel.SetActive(true);
+            }
+            else
+            {
+                isShowTask = !isShowTask;
+                taskPanel.SetActive(false);
             }
         }
     }
@@ -114,6 +140,7 @@ public class Menu : MonoBehaviour
 
     public void Main()
     {
+        SaveManager.GetInstance().Save();
         SceneManager.LoadScene(0);
     }
 }

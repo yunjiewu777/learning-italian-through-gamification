@@ -7197,6 +7197,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1680904753, guid: 757667fb15b68844fb07ab394fad114f, type: 3}
+      propertyPath: minigame
+      value: 
+      objectReference: {fileID: 11400000, guid: a478395d01c0ee442968fdb061fa4af8, type: 2}
+    - target: {fileID: 1707587454, guid: 757667fb15b68844fb07ab394fad114f, type: 3}
+      propertyPath: minigame
+      value: 
+      objectReference: {fileID: 11400000, guid: 9c1e5f461c6469d49b72c6cfaf712fc1, type: 2}
     - target: {fileID: 7687844749479488702, guid: 757667fb15b68844fb07ab394fad114f, type: 3}
       propertyPath: transPanel
       value: 
@@ -7289,6 +7297,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8832640403384998166, guid: 757667fb15b68844fb07ab394fad114f, type: 3}
+      propertyPath: minigame
+      value: 
+      objectReference: {fileID: 11400000, guid: 84263c8a9684ebc48a11ff1eece592f9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 757667fb15b68844fb07ab394fad114f, type: 3}
 --- !u!114 &2075100020 stripped

@@ -28,8 +28,8 @@ public class ScoreDisplay : MonoBehaviour
         des.text = missionDataBase.missionTasks[id].des;
 
         int currentPoint = minigame.score[level.difficultyLevel - 1];
-        need.text = currentPoint.ToString() + "/" + missionDataBase.missionTasks[id].needGoods.goodsCount.ToString();
-        if (currentPoint >= missionDataBase.missionTasks[id].needGoods.goodsCount)
+        need.text = currentPoint.ToString() + "/" + missionDataBase.missionTasks[id].needGoods.goodsCount[level.difficultyLevel-1].ToString();
+        if (currentPoint >= missionDataBase.missionTasks[id].needGoods.goodsCount[level.difficultyLevel-1])
         {
             isFinish = true;
         }
