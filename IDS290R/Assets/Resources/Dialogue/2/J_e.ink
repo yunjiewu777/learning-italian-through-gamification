@@ -7,7 +7,7 @@ Good afternoon #speaker:J
     + [Chat?]
         -> chat
     + [Give me a challange?]
-        #scene:Asteroid
+        #scene:AsteroidMainMenu
         -> DONE
     + [Nothing, just say hi.]
         Ok, bye.

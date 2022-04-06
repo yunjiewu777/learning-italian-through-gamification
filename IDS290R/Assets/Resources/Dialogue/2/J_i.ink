@@ -7,7 +7,7 @@ Buon pomeriggio #speaker:J
     + [Chiacchierata?]
         -> chat
     + [Mi dai una sfida?]
-        #scene:Asteroid
+        #scene:AsteroidMainMenu
         -> DONE
     + [Niente, saluta.]
         Ok ciao.

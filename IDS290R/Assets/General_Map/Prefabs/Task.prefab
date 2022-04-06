@@ -229,6 +229,85 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &620295179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 620295180}
+  - component: {fileID: 620295182}
+  - component: {fileID: 620295181}
+  m_Layer: 5
+  m_Name: Level
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &620295180
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620295179}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1191376589}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -30}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &620295182
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620295179}
+  m_CullTransparentMesh: 1
+--- !u!114 &620295181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620295179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Level 0
 --- !u!1 &719554482
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,7 +490,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 620295180}
   m_Father: {fileID: 8832640402713795766}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -552,6 +632,7 @@ MonoBehaviour:
   minigame: {fileID: 11400000, guid: bf2aee249a0caba408d41b6d9d16b711, type: 2}
   missionDataBase: {fileID: 11400000, guid: 81dfbaef329886742b097b732eadf1da, type: 2}
   finish: {fileID: 1002318306}
+  level: {fileID: 11400000, guid: 8aa2e057905149f48a4d5a9d4c1b38f3, type: 2}
   id: 2
   isFinish: 0
 --- !u!1 &1707587452
@@ -648,6 +729,7 @@ MonoBehaviour:
   minigame: {fileID: 11400000, guid: 8455310db59e79c41851ce47a777265a, type: 2}
   missionDataBase: {fileID: 11400000, guid: 81dfbaef329886742b097b732eadf1da, type: 2}
   finish: {fileID: 446009623}
+  level: {fileID: 11400000, guid: 8aa2e057905149f48a4d5a9d4c1b38f3, type: 2}
   id: 1
   isFinish: 0
 --- !u!1 &2003486961
@@ -1342,6 +1424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: 0e2b43b4c0205bd489a4c3cd1251c4c6, type: 2}
   pauseMenu: {fileID: 1191376588}
+  level: {fileID: 11400000, guid: 8aa2e057905149f48a4d5a9d4c1b38f3, type: 2}
+  levelDisplay: {fileID: 620295181}
   taskPanel: {fileID: 8832640404283656042}
   transPanel: {fileID: 0}
 --- !u!1 &8832640404283656042
@@ -1441,6 +1525,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: A
       objectReference: {fileID: 0}
+    - target: {fileID: 5731904232923319582, guid: b99604b5592376d47a0705fe326ed17f, type: 3}
+      propertyPath: level
+      value: 
+      objectReference: {fileID: 11400000, guid: 8aa2e057905149f48a4d5a9d4c1b38f3, type: 2}
     - target: {fileID: 5731904232923319582, guid: b99604b5592376d47a0705fe326ed17f, type: 3}
       propertyPath: finish
       value: 

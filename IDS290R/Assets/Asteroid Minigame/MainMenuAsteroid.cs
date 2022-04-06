@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuAsteroid : MonoBehaviour
 {
+    public Vector2 playerPosition;
+    public VectorValue plyaerStorage;
     public void ExitButton() {
         // Application.Quit;
         // Debug.Log("Game closed");
-        SceneManager.LoadScene("MainMenu");
+        plyaerStorage.initialValue = playerPosition;
+        SceneManager.LoadScene("House3");
     }
 
     public void StartGame(){
