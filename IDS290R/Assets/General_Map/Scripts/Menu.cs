@@ -195,4 +195,7 @@ public class Menu : MonoBehaviour
         SaveManager.GetInstance().Save();
         SceneManager.LoadScene(0);
     }
+
+
+
 }

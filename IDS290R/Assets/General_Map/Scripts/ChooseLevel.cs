@@ -11,6 +11,7 @@ public class ChooseLevel : MonoBehaviour
     public VectorValue plyaerStorage;
     public GameObject levelMenu;
 
+    public GameObject endMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -31,5 +32,22 @@ public class ChooseLevel : MonoBehaviour
     {
         levelMenu.SetActive(false);
        
+    }
+
+
+    public void End()
+    {
+        levelMenu.SetActive(false);
+        endMenu.SetActive(true);
+    }
+
+    public void Stay()
+    {
+        endMenu.SetActive(false);
+    }
+
+    public void Back()
+    {
+        SceneManager.LoadScene("EndingScene");
     }
 }
