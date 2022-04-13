@@ -19,7 +19,7 @@ public class Menu : MonoBehaviour
     private bool isShowTrans;
     public void Start()
     {
-        levelDisplay.text = "Level " + level.difficultyLevel.ToString();
+        levelDisplay.text = "You are currently on Level " + level.difficultyLevel.ToString();
         isShow = false;
         isShowTrans = false;
         isShowTask = false;
