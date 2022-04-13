@@ -44,11 +44,12 @@ public class MainMenu : MonoBehaviour
     public void startNewGame()
     {
         File.Delete(Application.persistentDataPath + "/" + "SaveTest.dat");
+        plyaerStorage.initialValue = playerPosition;
         SaveManager.GetInstance().level.difficultyLevel = 1;
         SaveManager.GetInstance().minigameA.score = new int[5];
         SaveManager.GetInstance().minigameM.score = new int[5];
         SaveManager.GetInstance().minigameT.score = new int[5];
-        SceneManager.LoadScene("Town");
+        SceneManager.LoadScene("Intro_Story");
     }
 
     public void closeWarning2()
@@ -59,6 +60,17 @@ public class MainMenu : MonoBehaviour
     public void closeWarning1()
     {
         warning1.SetActive(false);
+    }
+
+
+    public void Intro()
+    {
+        SceneManager.LoadScene("Intro_Story", LoadSceneMode.Single);
+    }
+
+    public void Contributor()
+    {
+        SceneManager.LoadScene("", LoadSceneMode.Single);
     }
 
 }
