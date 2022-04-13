@@ -6,6 +6,6 @@ using UnityEngine.SceneManagement;
 public class MainStory : MonoBehaviour
 {
     void OnEnable(){
-        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+        SceneManager.LoadScene("Town");
     }
 }

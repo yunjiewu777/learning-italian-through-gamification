@@ -17,17 +17,28 @@ public class Menu : MonoBehaviour
 
     public GameObject transPanel;
     private bool isShowTrans;
+
+    public GameObject helpPanel;
+    private bool isShowHelp;
+
     public void Start()
     {
         levelDisplay.text = "Level " + level.difficultyLevel.ToString();
         isShow = false;
         isShowTrans = false;
         isShowTask = false;
+        isShowHelp = true;
+        if (System.IO.File.Exists(Application.persistentDataPath + "/" + "SaveTest.dat"))
+        {
+            isShowHelp = false;
+        }
+        
     }
     public void Update()
     {
         PauseGame();
         TaskPanel();
+        Help();
     }
     public void PlayGame()
     {
@@ -76,6 +87,33 @@ public class Menu : MonoBehaviour
         }
     }
 
+    void Help()
+    {
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            if (!isShowHelp)
+            {
+                isShowHelp = !isShowHelp;
+                helpPanel.SetActive(true);
+            }
+            else
+            {
+                isShowHelp = !isShowHelp;
+                helpPanel.SetActive(false);
+            }
+        }
+    }
+
+    public void CloseHelp()
+    {
+        isShowHelp = !isShowHelp;
+        helpPanel.SetActive(false);
+    }
+
+    public void OpenTextbook()
+    {
+        Application.OpenURL("http://www.google.com".Trim());
+    }
 
     void TaskPanel()
     {
@@ -135,6 +173,20 @@ public class Menu : MonoBehaviour
         {
             isShowTask = !isShowTask;
             taskPanel.SetActive(false);
+        }
+    }
+
+    public void ShowHelp()
+    {
+        if (!isShowHelp)
+        {
+            isShowHelp = !isShowHelp;
+            helpPanel.SetActive(true);
+        }
+        else
+        {
+            isShowHelp = !isShowHelp;
+            helpPanel.SetActive(false);
         }
     }
 

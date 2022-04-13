@@ -22,6 +22,7 @@ public class ChooseLevel : MonoBehaviour
     {
         level.difficultyLevel = setlevel;
         plyaerStorage.initialValue = playerPosition;
+        SaveManager.GetInstance().Save();
         SceneManager.LoadScene("BigHouse");
 
     }
