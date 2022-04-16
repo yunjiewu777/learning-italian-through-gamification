@@ -907,7 +907,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526239512}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.117860556, y: 1.5419319, z: -10}
+  m_LocalPosition: {x: 0.11786032, y: 1.5419319, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6974,7 +6974,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570052900}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1000988, y: -1.4525328, z: -10}
+  m_LocalPosition: {x: -3.0998254, y: -1.4525328, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1925456366}
@@ -8351,7 +8351,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 258291895}
+  speaker: A
+  level: {fileID: 11400000, guid: 8aa2e057905149f48a4d5a9d4c1b38f3, type: 2}
   inkJSON: {fileID: 4900000, guid: fa7004e38bb254d44bca5710780db0eb, type: 3}
+  inkJSONTrans: {fileID: 0}
 --- !u!1001 &2075100019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8456,6 +8459,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8637766040357324946, guid: 1b8c37f6de3ad7e4d9ae1dd98711ac3d, type: 3}
+      propertyPath: sceneToLoad
+      value: QuizGame_MainMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 8637766040357324946, guid: 1b8c37f6de3ad7e4d9ae1dd98711ac3d, type: 3}
       propertyPath: dialogueText
       value: 
