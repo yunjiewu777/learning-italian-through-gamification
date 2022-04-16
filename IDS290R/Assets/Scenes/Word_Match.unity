@@ -1200,7 +1200,7 @@ GameObject:
   - component: {fileID: 994495492}
   - component: {fileID: 994495491}
   m_Layer: 5
-  m_Name: MenuButton
+  m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1271,8 +1271,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1388816369}
-        m_TargetAssemblyTypeName: PauseMenuGeneralMap, Assembly-CSharp
-        m_MethodName: LoadMenu
+        m_TargetAssemblyTypeName: MatchImagePauseMenu, Assembly-CSharp
+        m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1790,7 +1790,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1388816369}
-        m_TargetAssemblyTypeName: PauseMenuGeneralMap, Assembly-CSharp
+        m_TargetAssemblyTypeName: MatchImagePauseMenu, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
@@ -1874,7 +1874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -12}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1298490943
@@ -1925,9 +1925,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'MENU
-
-'
+  m_Text: RESTART
 --- !u!222 &1298490945
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2142,7 +2140,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1388816364}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ee5d5f4ace153b41ad430d4ac3fe84a, type: 3}
+  m_Script: {fileID: 11500000, guid: c3b5b7421188d2e40bdce05d9c253d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1940939299}
@@ -2516,7 +2514,7 @@ GameObject:
   - component: {fileID: 1898434420}
   - component: {fileID: 1898434419}
   m_Layer: 5
-  m_Name: QuitButton
+  m_Name: BackButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2587,8 +2585,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1388816369}
-        m_TargetAssemblyTypeName: PauseMenuGeneralMap, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_TargetAssemblyTypeName: MatchImagePauseMenu, Assembly-CSharp
+        m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2985,7 +2983,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUIT
+  m_Text: BACK
 --- !u!222 &2028537203
 CanvasRenderer:
   m_ObjectHideFlags: 0

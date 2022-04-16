@@ -227,7 +227,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 550142996}
-        m_TargetAssemblyTypeName: PauseMenuGeneralMap, Assembly-CSharp
+        m_TargetAssemblyTypeName: AsteroidPauseMenu, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
@@ -580,7 +580,7 @@ GameObject:
   - component: {fileID: 256607304}
   - component: {fileID: 256607303}
   m_Layer: 5
-  m_Name: MenuButton
+  m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -651,8 +651,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 550142996}
-        m_TargetAssemblyTypeName: PauseMenuGeneralMap, Assembly-CSharp
-        m_MethodName: LoadMenu
+        m_TargetAssemblyTypeName: AsteroidPauseMenu, Assembly-CSharp
+        m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1122,7 +1122,7 @@ GameObject:
   - component: {fileID: 379281467}
   - component: {fileID: 379281466}
   m_Layer: 5
-  m_Name: QuitButton
+  m_Name: BackButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1193,8 +1193,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 550142996}
-        m_TargetAssemblyTypeName: PauseMenuGeneralMap, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_TargetAssemblyTypeName: AsteroidPauseMenu, Assembly-CSharp
+        m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1354,7 +1354,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 550142991}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ee5d5f4ace153b41ad430d4ac3fe84a, type: 3}
+  m_Script: {fileID: 11500000, guid: a8814db82acb7a1479b309eafaa0f8d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1227193571}
@@ -1698,7 +1698,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1239674184
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1923,7 +1923,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'MENU
+  m_Text: 'RESTART
 
 '
 --- !u!222 &1333696089
@@ -2088,7 +2088,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
-  m_GravityScale: 0.05
+  m_GravityScale: 0.02
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -2537,7 +2537,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.05
+  m_GravityScale: 0.02
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -2789,7 +2789,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUIT
+  m_Text: BACK
 --- !u!222 &2004400754
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3257,7 +3257,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.05
+  m_GravityScale: 0.02
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

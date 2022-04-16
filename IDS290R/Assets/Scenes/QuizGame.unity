@@ -875,7 +875,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1109125285}
-        m_TargetAssemblyTypeName: PauseMenuGeneralMap, Assembly-CSharp
+        m_TargetAssemblyTypeName: PauseMenuQuizGame, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
@@ -2007,7 +2007,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -12}
+  m_AnchoredPosition: {x: 0, y: 0.0000076293945}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &926227137
@@ -2058,9 +2058,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'MENU
-
-'
+  m_Text: RESTART
 --- !u!222 &926227139
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2355,7 +2353,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUIT
+  m_Text: BACK
 --- !u!222 &1059464497
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2630,7 +2628,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1109125280}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ee5d5f4ace153b41ad430d4ac3fe84a, type: 3}
+  m_Script: {fileID: 11500000, guid: 416cc9c17de60294e9e99e86a952f4e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1306354968}
@@ -3689,7 +3687,7 @@ GameObject:
   - component: {fileID: 1734893307}
   - component: {fileID: 1734893306}
   m_Layer: 5
-  m_Name: MenuButton
+  m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3760,8 +3758,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1109125285}
-        m_TargetAssemblyTypeName: PauseMenuGeneralMap, Assembly-CSharp
-        m_MethodName: LoadMenu
+        m_TargetAssemblyTypeName: PauseMenuQuizGame, Assembly-CSharp
+        m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4367,7 +4365,7 @@ GameObject:
   - component: {fileID: 2036696761}
   - component: {fileID: 2036696760}
   m_Layer: 5
-  m_Name: QuitButton
+  m_Name: BackButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4438,8 +4436,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1109125285}
-        m_TargetAssemblyTypeName: PauseMenuGeneralMap, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_TargetAssemblyTypeName: PauseMenuQuizGame, Assembly-CSharp
+        m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
