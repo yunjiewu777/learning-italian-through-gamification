@@ -197,6 +197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8637766040357324947}
   - component: {fileID: 8637766040357324946}
+  - component: {fileID: 190049874}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -236,7 +237,30 @@ MonoBehaviour:
   displayNameText: {fileID: 0}
   sceneToLoad: 
   level: 
-  choices: []
+  choices:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &190049874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8637766040357324948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d0669f192590fb4f90604150502ed8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 0}
+  dialogueText: {fileID: 0}
+  displayNameText: {fileID: 0}
+  sceneToLoad: 
+  choices:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &8637766040570065792
 GameObject:
   m_ObjectHideFlags: 0

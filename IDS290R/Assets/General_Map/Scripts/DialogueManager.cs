@@ -5,21 +5,22 @@ using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField] private GameObject levelPanel;
     [Header("Dialouge UI")]
     [SerializeField] private GameObject dialoguePanel;
-    [SerializeField] private TextMeshProUGUI dialogueText;
-    [SerializeField] private TextMeshProUGUI displayNameText;
+    [SerializeField] private Text dialogueText;
+    [SerializeField] private Text displayNameText;
     [SerializeField] private string sceneToLoad;
     [SerializeField] private string level;
     private bool loading = false;
 
     [Header("Choice UI")]
     [SerializeField] private GameObject[] choices;
-    private TextMeshProUGUI[] choicesText;
+    private Text[] choicesText;
 
     private const string SPEAKER_TAG = "speaker";
     private const string SCENE = "scene";
@@ -99,11 +100,11 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
 
-        choicesText = new TextMeshProUGUI[choices.Length];
+        choicesText = new Text[choices.Length];
         int index = 0;
         foreach (GameObject choice in choices)
         {
-            choicesText[index] = choice.GetComponentInChildren<TextMeshProUGUI>();
+            choicesText[index] = choice.GetComponentInChildren<Text>();
             index++;
         }
 

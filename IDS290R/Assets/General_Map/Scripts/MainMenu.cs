@@ -73,4 +73,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("", LoadSceneMode.Single);
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
 }
