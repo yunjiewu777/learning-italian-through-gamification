@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/House1.unity
     guid: f6cf4edeab867d8429dd7156f0668973
   - enabled: 1
-    path: Assets/Scenes/QuizGameWeek1.unity
+    path: Assets/Scenes/QuizGame.unity
     guid: 0d870f9d94ca3b74d9df0568cc55773a
   - enabled: 1
     path: Assets/Scenes/Asteroid.unity
