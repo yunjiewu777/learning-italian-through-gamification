@@ -226,7 +226,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 550142996}
         m_TargetAssemblyTypeName: PauseMenuGeneralMap, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
@@ -650,7 +650,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 550142996}
         m_TargetAssemblyTypeName: PauseMenuGeneralMap, Assembly-CSharp
         m_MethodName: LoadMenu
         m_Mode: 1
@@ -1192,7 +1192,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 550142996}
         m_TargetAssemblyTypeName: PauseMenuGeneralMap, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -2848,7 +2848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2858,7 +2858,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 30
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
@@ -2868,7 +2868,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level 0
+  m_Text: 'You are currently on Level: 0'
 --- !u!222 &2060928621
 CanvasRenderer:
   m_ObjectHideFlags: 0

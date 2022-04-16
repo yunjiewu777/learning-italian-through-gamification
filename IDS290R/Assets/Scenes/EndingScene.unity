@@ -760,7 +760,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Your have completed DaVinci's tasks and masterted the Italian language.
+  m_Text: Your have completed DaVinci's tasks and mastered the Italian language.
 --- !u!222 &1313827707
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -829,7 +829,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1388356293}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 68a899cef78f9d84a8ca7ca126f54fcd, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 9bdd3b5639b866246847efe0f349b634, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -851,6 +851,22 @@ PlayableDirector:
     value: {fileID: 1641548509}
   - key: {fileID: 870134594921993691, guid: 68a899cef78f9d84a8ca7ca126f54fcd, type: 2}
     value: {fileID: 1790683363}
+  - key: {fileID: -2262679161888436822, guid: 9bdd3b5639b866246847efe0f349b634, type: 2}
+    value: {fileID: 338063263}
+  - key: {fileID: 2962949876295306034, guid: 9bdd3b5639b866246847efe0f349b634, type: 2}
+    value: {fileID: 1313827705}
+  - key: {fileID: -6435599795267727519, guid: 9bdd3b5639b866246847efe0f349b634, type: 2}
+    value: {fileID: 475272215}
+  - key: {fileID: -7189260113333062374, guid: 9bdd3b5639b866246847efe0f349b634, type: 2}
+    value: {fileID: 1904622752}
+  - key: {fileID: -7704678170462473616, guid: 9bdd3b5639b866246847efe0f349b634, type: 2}
+    value: {fileID: 1641548509}
+  - key: {fileID: 870134594921993691, guid: 9bdd3b5639b866246847efe0f349b634, type: 2}
+    value: {fileID: 1790683363}
+  - key: {fileID: -1230328671212347274, guid: 9bdd3b5639b866246847efe0f349b634, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 5473948349925318026, guid: 9bdd3b5639b866246847efe0f349b634, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1388356296
