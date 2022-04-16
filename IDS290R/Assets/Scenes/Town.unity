@@ -26752,6 +26752,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7687844749479488702, guid: 757667fb15b68844fb07ab394fad114f, type: 3}
+      propertyPath: helpPanel
+      value: 
+      objectReference: {fileID: 1438981923}
     - target: {fileID: 8832640402713795754, guid: 757667fb15b68844fb07ab394fad114f, type: 3}
       propertyPath: m_Name
       value: Menu
