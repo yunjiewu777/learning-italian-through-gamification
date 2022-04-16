@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuWordMatch : MonoBehaviour
 {
+    public Vector2 playerPosition;
+    public VectorValue plyaerStorage;
     public void BackButton() {
-        SceneManager.LoadScene("MainMenu");
+        plyaerStorage.initialValue = playerPosition;
+        SceneManager.LoadScene("House3");
     }
 
     public void StartGame(){
