@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e77653186c03584387e64f1434f2b72, type: 3}
+  m_Name: QuestionsDataWeek1
+  m_EditorClassIdentifier: 
+  questions:
+  - questionInfo: 'Match the correct ending: we worked '
+    options:
+    - 'A: Lavori'
+    - 'B: Lavoriamo'
+    - C:Lavoro
+    correctAns: 'B: Lavoriamo'
+  - questionInfo: ' Select ending of Masculine plural nouns'
+    options:
+    - 'A: -o'
+    - 'B: -i'
+    - 'C: -a'
+    correctAns: 'B: -i'
+  - questionInfo: 'Choose the correct indefinite article: __ panino'
+    options:
+    - 'A: una'
+    - 'B: uno'
+    - 'C: un'
+    correctAns: 'C: un'
+  - questionInfo: "Which is the correct subject for \u201Cleggiamo\u201D"
+    options:
+    - 'A: voi'
+    - 'B: loro'
+    - 'C: noi'
+    correctAns: 'C: noi'
+  - questionInfo: "What definite article goes with \u201Clibri\u201D"
+    options:
+    - 'A: i'
+    - 'B: il'
+    - 'C: le'
+    correctAns: 'A: i'

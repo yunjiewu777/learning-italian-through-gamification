@@ -123,105 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &9667804
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9667808}
-  - component: {fileID: 9667807}
-  - component: {fileID: 9667806}
-  - component: {fileID: 9667805}
-  m_Layer: 5
-  m_Name: 7thSentence
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!95 &9667805
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9667804}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &9667806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9667804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9575472, b: 0.9575472, a: 0.25188315}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 829d7a9786eb4554c9dfbebefe986218, type: 3}
-    m_FontSize: 60
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 100
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!222 &9667807
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9667804}
-  m_CullTransparentMesh: 1
---- !u!224 &9667808
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9667804}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1388356299}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 17.156998, y: -125.62}
-  m_SizeDelta: {x: -294.11, y: -864.662}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &338063262
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,8 +760,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Your have completed DaVinci's tasks and completed the quest of learning
-    the Italian language.
+  m_Text: Your have completed DaVinci's tasks and masterted the Italian language.
 --- !u!222 &1313827707
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -949,26 +849,8 @@ PlayableDirector:
     value: {fileID: 1904622752}
   - key: {fileID: -7704678170462473616, guid: 68a899cef78f9d84a8ca7ca126f54fcd, type: 2}
     value: {fileID: 1641548509}
-  - key: {fileID: 51721611021255325, guid: 68a899cef78f9d84a8ca7ca126f54fcd, type: 2}
-    value: {fileID: 9667805}
   - key: {fileID: 870134594921993691, guid: 68a899cef78f9d84a8ca7ca126f54fcd, type: 2}
     value: {fileID: 1790683363}
-  - key: {fileID: 6889121156658664596, guid: 68a899cef78f9d84a8ca7ca126f54fcd, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 1811390048063179890, guid: 68a899cef78f9d84a8ca7ca126f54fcd, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 8423623568042036676, guid: 68a899cef78f9d84a8ca7ca126f54fcd, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -935705594870111806, guid: 68a899cef78f9d84a8ca7ca126f54fcd, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -5283398818567634523, guid: 68a899cef78f9d84a8ca7ca126f54fcd, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 3825296176241880718, guid: 68a899cef78f9d84a8ca7ca126f54fcd, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -8198583883467389663, guid: 68a899cef78f9d84a8ca7ca126f54fcd, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -315949886906728222, guid: 68a899cef78f9d84a8ca7ca126f54fcd, type: 2}
-    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1388356296
@@ -1049,7 +931,6 @@ RectTransform:
   - {fileID: 1904622755}
   - {fileID: 1641548512}
   - {fileID: 1790683366}
-  - {fileID: 9667808}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1130,7 +1011,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Since you have completed DaVinci's tasks, you can now breeze through the
-    class
+    class. Molto bene
 --- !u!222 &1641548511
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1336,8 +1217,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You slowly open your eyes. You see that only a few minutes have passed
-    since the unexplained event happened.
+  m_Text: Your eyes slowly open. You see that only a few minutes have passed since
+    the unexplained event happened.
 --- !u!222 &1904622754
 CanvasRenderer:
   m_ObjectHideFlags: 0

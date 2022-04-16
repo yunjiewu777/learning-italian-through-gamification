@@ -20,7 +20,7 @@ public class MatchLogic : MonoBehaviour
     // Update is called once per frame
     void UpdatePointsText()
     {
-        pointsText.text = points + "/" + maxPoints;
+        pointsText.text = "Current score: " + points + "/" + maxPoints;
         if(points == maxPoints){
             levelCompleteUI.SetActive(true);
         }

@@ -9,7 +9,7 @@ public class DamageHandler : MonoBehaviour
     public float invulnPeriod = 0;
     float invulnTimer = 0;
     int correctLayer;
-    public GameObject end;
+    //public GameObject end;
 
     void Start() {
         correctLayer = gameObject.layer;
@@ -35,8 +35,8 @@ public class DamageHandler : MonoBehaviour
     }
 
     void Die(){
-        FindObjectOfType<Point>().ScoreCount();
+       // FindObjectOfType<Point>().ScoreCount();
         Destroy(gameObject);
-        end.SetActive(true);
+       // end.SetActive(true);
     }
 }

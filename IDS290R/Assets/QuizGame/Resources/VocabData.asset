@@ -14,17 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   categoryName: Vocab
   questions:
-  - questionInfo: How do you say "Hello" in Italian?
+  - questionInfo: How do you say "your name is Giovanni"?
     questionType: 0
     questionImage: {fileID: 0}
     audioClip: {fileID: 0}
     videoClip: {fileID: 0}
     options:
-    - Altro
-    - Ciao
-    - Suo
-    - Grande
-    correctAns: Ciao
+    - Mi chiamo Giovanni
+    - Vi chiamate Giovanni
+    - Ti chiami Giovanni
+    correctAns: Ti chiami Giovanni
   - questionInfo: How do you say "Bye" in Italian?
     questionType: 0
     questionImage: {fileID: 0}
