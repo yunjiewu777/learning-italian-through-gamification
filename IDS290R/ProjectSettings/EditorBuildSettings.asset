@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/House3.unity
     guid: f4920dfe0662e1e4593cf9275e6bc9d8
+  - enabled: 1
+    path: Assets/Scenes/QuizGame_MainMenu.unity
+    guid: 2b0aec03c8147f546bd68ab66e5653c7
   m_configObjects: {}
