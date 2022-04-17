@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MainStory : MonoBehaviour
 {
+
+    public VectorValue plyaerStorage;
+
     void OnEnable(){
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Town");
     }
 }

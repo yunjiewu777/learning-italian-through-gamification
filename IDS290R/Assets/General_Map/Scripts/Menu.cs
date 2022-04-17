@@ -27,11 +27,7 @@ public class Menu : MonoBehaviour
         isShow = false;
         isShowTrans = false;
         isShowTask = false;
-        isShowHelp = true;
-        if (System.IO.File.Exists(Application.persistentDataPath + "/" + "SaveTest.dat"))
-        {
-            isShowHelp = false;
-        }
+        isShowHelp = false;
         
     }
     public void Update()

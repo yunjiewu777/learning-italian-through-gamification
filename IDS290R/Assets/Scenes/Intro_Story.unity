@@ -783,6 +783,7 @@ PrefabInstance:
     - {fileID: 8637766040357324946, guid: 1b8c37f6de3ad7e4d9ae1dd98711ac3d, type: 3}
     - {fileID: 974573673, guid: 1b8c37f6de3ad7e4d9ae1dd98711ac3d, type: 3}
     - {fileID: 974573672, guid: 1b8c37f6de3ad7e4d9ae1dd98711ac3d, type: 3}
+    - {fileID: 190049874, guid: 1b8c37f6de3ad7e4d9ae1dd98711ac3d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1b8c37f6de3ad7e4d9ae1dd98711ac3d, type: 3}
 --- !u!1 &530249102
 GameObject:
@@ -1190,6 +1191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 121c0af849510094a971b8a1858a1cc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  plyaerStorage: {fileID: 11400000, guid: a34534bd60b179447a2d9d07e23f2ccf, type: 2}
 --- !u!4 &880158824
 Transform:
   m_ObjectHideFlags: 0
@@ -1773,6 +1775,8 @@ PlayableDirector:
     value: {fileID: 530249104}
   - key: {fileID: -8352489109083279860, guid: 68a899cef78f9d84a8ca7ca126f54fcd, type: 2}
     value: {fileID: 369459496}
+  - key: {fileID: 5444797277916521297, guid: 68a899cef78f9d84a8ca7ca126f54fcd, type: 2}
+    value: {fileID: 1706457560}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1706457562
