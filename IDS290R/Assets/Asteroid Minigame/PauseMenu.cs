@@ -8,7 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     public string sceneToLoad;
     public VectorValue plyaerStorage;
-    public int score;
+    public Text score;
     public Level level;
     public Text scoreText;
     public Task minigame;
@@ -16,10 +16,14 @@ public class PauseMenu : MonoBehaviour
     public string sceneToSave;
 
     // Update is called once per frame
-    void Start()
+    void OnEnable()
     {
-        score = FindObjectOfType<Point>().GetScore();
-        scoreText.text = score.ToString();
+        scoreText.text = score.text;
+        if (int.Parse(score.text) > minigame.score[level.difficultyLevel - 1])
+        {
+            minigame.score[level.difficultyLevel - 1] = int.Parse(score.text);
+            SaveManager.GetInstance().Save();
+        }
     }
 
     public void StartOver()
@@ -30,11 +34,8 @@ public class PauseMenu : MonoBehaviour
 
     public void Exit()
     {
-        if (score > minigame.score[level.difficultyLevel-1])
-        {
-            minigame.score[level.difficultyLevel-1] = score;
-            SaveManager.GetInstance().Save();
-        }
+        Time.timeScale = 1f;
         SceneManager.LoadScene(sceneToLoad);
     }
+
 }

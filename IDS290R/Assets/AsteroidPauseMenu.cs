@@ -6,16 +6,20 @@ using UnityEngine.SceneManagement;
 public class AsteroidPauseMenu : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static bool GameIsPaused = false;
+    public float GameIsPaused;
     public GameObject pauseMenuUI;
+    public bool pauseShown = false;
     // Update is called once per frame
+
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape)){
-            if(GameIsPaused){
+            if(pauseShown)
+            {
                 Resume();
             }
             else{
+                GameIsPaused = Time.timeScale;
                 Pause();
             }
         }
@@ -23,16 +27,16 @@ public class AsteroidPauseMenu : MonoBehaviour
 
     public void Resume ()
     {
+        pauseShown = !pauseShown;
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
-        GameIsPaused = false;
+        Time.timeScale = GameIsPaused;
     }
 
     void Pause ()
     {
+        pauseShown = !pauseShown;
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
-        GameIsPaused = true;
     }
 
     public void LoadMenu(){

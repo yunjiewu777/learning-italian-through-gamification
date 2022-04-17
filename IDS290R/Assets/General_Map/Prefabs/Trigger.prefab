@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 826402641760042718}
   - component: {fileID: 826402641760042719}
-  - component: {fileID: 826402641760042712}
+  - component: {fileID: 826402639783005422}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -58,7 +58,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 1.8859193}
   m_EdgeRadius: 0
---- !u!114 &826402641760042712
+--- !u!114 &826402639783005422
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,11 +67,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 826402641760042717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05b7c91d450637049bcc9082d3c1506c, type: 3}
+  m_Script: {fileID: 11500000, guid: e06f53656d2cf4643b8132654bc90374, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 0}
   speaker: J
   level: {fileID: 11400000, guid: 8aa2e057905149f48a4d5a9d4c1b38f3, type: 2}
-  inkJSON: {fileID: 4900000, guid: fa7004e38bb254d44bca5710780db0eb, type: 3}
+  inkJSON: {fileID: 0}
   inkJSONTrans: {fileID: 0}

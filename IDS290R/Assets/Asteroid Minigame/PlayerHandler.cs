@@ -4,23 +4,26 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class DamageHandler : MonoBehaviour
+public class PlayerHandler : MonoBehaviour
 {
     public int health = 1;
     public float invulnPeriod = 0;
     float invulnTimer = 0;
     int correctLayer;
 
+    public GameObject end;
+    public Text dieText;
+    public GameObject die;
 
     void Start() {
         correctLayer = gameObject.layer;
     }
-
     void OnTriggerEnter2D(){
         Debug.Log("Trigger!");
             health--;
             invulnTimer = invulnPeriod;
             gameObject.layer = 8;
+
     }
 
     void Update() {
@@ -36,7 +39,22 @@ public class DamageHandler : MonoBehaviour
 
     }
 
-    void Die(){       
+    void Die(){
+        dieText.text = "Opps, you are hit by an asteroid.";
+        GameObject[] stars = GameObject.FindGameObjectsWithTag("star");
+
+        foreach (GameObject a in stars)
+        {
+            Destroy(a);
+        }
+        GameObject[] beams = GameObject.FindGameObjectsWithTag("beam");
+        foreach (GameObject a in beams)
+        {
+            Destroy(a);
+        }
+        QuestionManager.GetInstance().ExitDialogueMode();
+        end.SetActive(false);
+        die.SetActive(true);     
         Destroy(gameObject);
     }
 }
