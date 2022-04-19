@@ -743,6 +743,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 8637766039918404112}
+    - target: {fileID: 8633156160128720179, guid: 7acf108b4bc348e43bb6eee95a6226e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 183625599}
+    - target: {fileID: 8633156160128720179, guid: 7acf108b4bc348e43bb6eee95a6226e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8637766039918404112}
+    - target: {fileID: 8633156160128720179, guid: 7acf108b4bc348e43bb6eee95a6226e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633156160128720179, guid: 7acf108b4bc348e43bb6eee95a6226e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Click
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633156160128720179, guid: 7acf108b4bc348e43bb6eee95a6226e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633156160128720179, guid: 7acf108b4bc348e43bb6eee95a6226e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: TranslationManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7acf108b4bc348e43bb6eee95a6226e0, type: 3}
 --- !u!114 &524333956 stripped

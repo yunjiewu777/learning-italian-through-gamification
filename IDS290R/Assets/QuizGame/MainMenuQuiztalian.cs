@@ -9,7 +9,7 @@ public class MainMenuQuiztalian : MonoBehaviour
     public VectorValue plyaerStorage;
     public void BackButton(){
         plyaerStorage.initialValue = playerPosition;
-        SceneManager.LoadScene("House3");
+        SceneManager.LoadScene("House1");
     }
     
     public void StartGame(){

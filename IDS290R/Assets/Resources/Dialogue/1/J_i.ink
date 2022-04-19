@@ -3,24 +3,51 @@
 === main===
 
 // start converstaion
-Ciao! #speaker:J
-    + [Chiacchierata?]
+Ciao #speaker:Julianna
+    + [practica del parlare?]
         -> chat
-    + [Mi dai una sfida?]
+    + [sfida di gioco]
         #scene:AsteroidMainMenu
         -> DONE
-    + [Niente, saluta.]
-        Ok ciao.
+    + [niente]
+        ok, ciao
         -> DONE
 
 === chat ===
-Mangio pane tostato a colazione. Cosa Mangi?
-    + [Mangio il pane alla marmellata]
-        Non mi piace la marmellata
+Ciao! 
+    +[Buongiorno]
+        ->m
+    +[Buon pomeriggio]
+        ->a
+    +[Buonasera]
+        ->e
+
+
+=== m ===
+Come ti chiami?
+    +[Mi chiamo Maria]
+        Piacere Maria
         ->DONE
-    + [Mangio macedonia]
-        Mi piace la macedonia
+    +[Mi chaimo Giovanni]
+        Piacere Giovanni
         ->DONE
--> DONE
+===a===
+Quanti anni hai?
+    +[Ho 21 anni]
+        sono vecchio!
+        ->DONE
+    +[Ho 19 anni]
+        Sono vecchio!
+        ->DONE
+
+===e===
+Di dove sei?
+    +[Sono di Londra]
+        Benvenuto in Italia
+        ->DONE
+    +[Sono di Madrid]
+        Benvenuto in Italia
+        ->DONE
+
 
 -> END

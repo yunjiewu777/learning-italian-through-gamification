@@ -18,8 +18,17 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Awake()
     {
-        inkJSON = Resources.Load<TextAsset>("Dialogue/" + level.difficultyLevel + "/" + speaker + "_i");
-        inkJSONTrans = Resources.Load<TextAsset>("Dialogue/" + level.difficultyLevel + "/" + speaker + "_e");
+        if (speaker == "D" | speaker == "L")
+        {
+            inkJSON = Resources.Load<TextAsset>("Dialogue/1/" + speaker + "_i");
+            inkJSONTrans = Resources.Load<TextAsset>("Dialogue/1/" + speaker + "_e");
+        }
+        else 
+        {
+            inkJSON = Resources.Load<TextAsset>("Dialogue/" + level.difficultyLevel + "/" + speaker + "_i");
+            inkJSONTrans = Resources.Load<TextAsset>("Dialogue/" + level.difficultyLevel + "/" + speaker + "_e");
+        }
+
         playerInRange = false;
         visualCue.SetActive(false);
     }
