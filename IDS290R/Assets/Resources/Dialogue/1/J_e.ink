@@ -3,23 +3,51 @@
 === main===
 
 // start converstaion
-Hello! #speaker:J
-    + [Chat?]
+Hi #speaker:Julianna
+    + [talking practice]
         -> chat
-    + [Give me a challange?]
+    + [game challenge]
         #scene:AsteroidMainMenu
         -> DONE
-    + [Nothing, just say hi.]
-        Ok, bye.
+    + [nothing]
+        ok bye
         -> DONE
 
 === chat ===
-I eat toast for breakfast. What do you eat?
-    + [I eat bread with marmalade]
-        I don’t like marmalade
-        -> DONE
-    + [I eat fruit salad]
-        I like fruit salad
-        -> DONE
+Hello！
+    +[good morning]
+        ->m
+    +[good afternoon]
+        ->a
+    +[good evening]
+        ->e
+
+
+=== m ===
+what is your name?
+    +[My name is Maria]
+        nice to meet you Maria
+        ->DONE
+    +[My name is Giovanni]
+        Nice to meet you Giovanni!
+        ->DONE
+===a===
+how old are you?
+    +[I am 21]
+        I am old
+        ->DONE
+    +[I am 19]
+        I am old
+        ->DONE
+
+===e===
+Where are you from?
+    +[I am from London]
+        welcome to Italy
+        ->DONE
+    +[I am from Madrid]
+        welcome to Italy
+        ->DONE
+
 
 -> END

@@ -16,6 +16,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Text displayNameText;
     [SerializeField] private string sceneToLoad;
     [SerializeField] private string level;
+    [SerializeField] private string culture;
+
     private bool loading = false;
 
     [Header("Choice UI")]
@@ -25,6 +27,7 @@ public class DialogueManager : MonoBehaviour
     private const string SPEAKER_TAG = "speaker";
     private const string SCENE = "scene";
     private const string LEVEL = "level";
+    private const string CULTURE = "culture";
 
 
     private Story currentStory;
@@ -53,6 +56,10 @@ public class DialogueManager : MonoBehaviour
         if (level == "change")
         {
             StartCoroutine(ChangeLevel());
+        }
+        if (culture == "true")
+        {
+            dialogueText.rectTransform.sizeDelta = new Vector2(225, 200);
         }
         
     }
@@ -133,6 +140,9 @@ public class DialogueManager : MonoBehaviour
                 case LEVEL:
                     level = tagValue;
                     break;
+                case CULTURE:
+                    culture = tagValue;
+                    break;
                 default:
                     break;
             }
@@ -149,6 +159,7 @@ public class DialogueManager : MonoBehaviour
         displayNameText.text = "???";
         sceneToLoad = "";
         level = "";
+        culture = "";
 
         ContinueStory();
     }
@@ -157,6 +168,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
+        dialogueText.rectTransform.sizeDelta = new Vector2(225, 95);
         dialogueText.text = "";    
     }
 

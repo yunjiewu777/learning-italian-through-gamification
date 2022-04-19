@@ -3,23 +3,23 @@
 === main===
 
 // start converstaion
-Good afternoon #speaker:J
-    + [Chat?]
+Hi #speaker:Julianna
+    + [talking practice]
         -> chat
-    + [Give me a challange?]
+    + [game challenge]
         #scene:AsteroidMainMenu
         -> DONE
-    + [Nothing, just say hi.]
-        Ok, bye.
+    + [nothing]
+        ok bye
         -> DONE
 
 === chat ===
-What time is it?
-    + [it is 13:00]
-        Time for lunch
-        -> DONE
-    + [it is 15:10]
-        I have a lesson in 20 minutes
-        -> DONE
+which lesson do you prefer? Italian or mathematics?
+    +[I prefer Italian]
+        I am happy!
+        ->DONE
+    +[I prefer mathematics]
+        mathematics lesson is not fun
+        ->DONE
 
 -> END

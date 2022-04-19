@@ -24,10 +24,10 @@ MonoBehaviour:
     id: 1
     needGoods:
       goodsType: 0
-      goodsCount: 0000000000000000000000000000000000000000
+      goodsCount: 0400000004000000040000000400000004000000
   - name: 
-    des: Audio
+    des: Quiz
     id: 2
     needGoods:
       goodsType: 0
-      goodsCount: 0000000000000000000000000000000000000000
+      goodsCount: 0400000004000000040000000400000004000000

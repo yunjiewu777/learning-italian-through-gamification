@@ -9,7 +9,7 @@ public class MainMenuWordMatch : MonoBehaviour
     public VectorValue plyaerStorage;
     public void BackButton() {
         plyaerStorage.initialValue = playerPosition;
-        SceneManager.LoadScene("House3");
+        SceneManager.LoadScene("House2");
     }
 
     public void StartGame(){

@@ -3,12 +3,15 @@
 === main===
 
 // start converstaion
-Hi #speaker:D
-    + [Difficulty Level]
+Ciao #speaker:Da Vinci
+    + [livelli di difficoltà]
         #level: change
         -> DONE
-    + [Nothing]
-        Ok bye.
+    + [altre cose da fare?]
+        parlare con NPC o complete le sfide
+        -> DONE
+    + [niente]
+        ok, ciao
         -> DONE
 
 -> END

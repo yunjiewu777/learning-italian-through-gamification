@@ -3,23 +3,23 @@
 === main===
 
 // start converstaion
-Buonasera #speaker:J
-    + [Chiacchierata?]
+Ciao #speaker:Julianna
+    + [practica del parlare?]
         -> chat
-    + [Mi dai una sfida?]
+    + [sfida di gioco]
         #scene:AsteroidMainMenu
         -> DONE
-    + [Niente, saluta.]
-        Ok ciao.
+    + [niente]
+        ok, ciao
         -> DONE
 
 === chat ===
-Vado a casa tra 15 minuti. Fai?
-    + [Sì]
-        Ci vediamo domani!
-        -> DONE
-    + [No, ho lavoro]
-        Buona fortuna!
-        -> DONE
+Cosa fai nel tuo tempo libero?
+    +[Guardo sempre la televisione]
+        io non so cosa è una televisione
+        ->DONE
+    +[I sometimes swim]
+        So nuotare
+        ->DONE
 
 -> END

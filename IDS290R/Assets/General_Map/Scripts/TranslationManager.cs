@@ -15,6 +15,8 @@ public class TranslationManager : MonoBehaviour
     [SerializeField] private Text displayNameText;
     [SerializeField] private string sceneToLoad;
     private bool loading = false;
+    [SerializeField] private string culture;
+    private const string CULTURE = "culture";
 
     [Header("Choice UI")]
     [SerializeField] private GameObject[] choices;
@@ -45,6 +47,10 @@ public class TranslationManager : MonoBehaviour
         if (sceneToLoad != "")
         {
             StartCoroutine(DelaySceneLoad());
+        }
+        if (culture == "true")
+        {
+            dialogueText.rectTransform.sizeDelta = new Vector2(225, 200);
         }
     }
 
@@ -90,6 +96,9 @@ public class TranslationManager : MonoBehaviour
                 case SCENE:
                     sceneToLoad = tagValue;
                     break;
+                case CULTURE:
+                    culture = tagValue;
+                    break;
                 default:
                     break;
             }
@@ -105,6 +114,7 @@ public class TranslationManager : MonoBehaviour
 
         displayNameText.text = "???";
         sceneToLoad = "";
+        culture = "";
 
         ContinueStory();
     }
@@ -112,7 +122,7 @@ public class TranslationManager : MonoBehaviour
     private void ExitDialogueMode()
     {
         dialogueIsPlaying = false;
-        dialoguePanel.SetActive(false);
+        dialogueText.rectTransform.sizeDelta = new Vector2(225, 95);
         dialogueText.text = "";
     }
 
