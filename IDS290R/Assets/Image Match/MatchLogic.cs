@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class MatchLogic : MonoBehaviour
 {
     static MatchLogic Instance;
-
     public int maxPoints = 3;
-    public Text pointsText;
+    //public GameObject currentProblem;
+    public GameObject nxtProbBtn;
     public GameObject levelCompleteUI;
-    private int points = 0;
+    //public GameObject nextProblem;
+    public Text pointsText;
+    public int points = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +25,12 @@ public class MatchLogic : MonoBehaviour
         pointsText.text = "Current score: " + points + "/" + maxPoints;
         if(points == maxPoints){
             levelCompleteUI.SetActive(true);
+           // currentProblem.SetActive(false);
+            nxtProbBtn.SetActive(true);
+            //nextProblem.SetActive(true);
         }
     }
+
 
     public static void AddPoint(){
         AddPoints(1);

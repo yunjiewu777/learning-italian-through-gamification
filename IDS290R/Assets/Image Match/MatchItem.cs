@@ -39,9 +39,9 @@ public class MatchItem : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoin
         //update direction
         Vector3 direction = position - transform.position;
         line.transform.right = direction;
-
         //update scale
         line.transform.localScale = new Vector3(direction.magnitude, 1, 1);
     }
+
 
 }

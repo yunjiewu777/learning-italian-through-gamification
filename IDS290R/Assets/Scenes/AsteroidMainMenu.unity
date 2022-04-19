@@ -920,7 +920,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: Look at the given questions and their respective options. Then, shoot the
     correct Asteroid which corresponds to your chosen answer. For example, if you
-    choose option A as your answer, shoot the left most asteroid, if you choose optiion
+    choose option A as your answer, shoot the left most asteroid, if you choose option
     B as your answer, shoot the middle asteroid and so on. Enjoy!
 --- !u!222 &962260567
 CanvasRenderer:
