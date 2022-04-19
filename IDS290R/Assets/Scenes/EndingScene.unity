@@ -182,6 +182,7 @@ PrefabInstance:
     - {fileID: 8637766040357324946, guid: 1b8c37f6de3ad7e4d9ae1dd98711ac3d, type: 3}
     - {fileID: 974573673, guid: 1b8c37f6de3ad7e4d9ae1dd98711ac3d, type: 3}
     - {fileID: 974573672, guid: 1b8c37f6de3ad7e4d9ae1dd98711ac3d, type: 3}
+    - {fileID: 190049874, guid: 1b8c37f6de3ad7e4d9ae1dd98711ac3d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1b8c37f6de3ad7e4d9ae1dd98711ac3d, type: 3}
 --- !u!1 &338063262
 GameObject:
@@ -552,6 +553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 121c0af849510094a971b8a1858a1cc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  plyaerStorage: {fileID: 0}
 --- !u!4 &995019621
 Transform:
   m_ObjectHideFlags: 0
@@ -924,7 +926,7 @@ PlayableDirector:
   - key: {fileID: 870134594921993691, guid: 9bdd3b5639b866246847efe0f349b634, type: 2}
     value: {fileID: 1790683363}
   - key: {fileID: -1230328671212347274, guid: 9bdd3b5639b866246847efe0f349b634, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 995019619}
   - key: {fileID: 5473948349925318026, guid: 9bdd3b5639b866246847efe0f349b634, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
@@ -1187,7 +1189,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'CREATED BY
-
 
 
     RUBY WU
