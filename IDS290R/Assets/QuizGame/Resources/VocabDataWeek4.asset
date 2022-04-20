@@ -10,39 +10,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f611d797432e3f846885b2b12fde5f35, type: 3}
-  m_Name: VocabData
+  m_Name: VocabDataWeek4
   m_EditorClassIdentifier: 
-  categoryName: Vocab
+  categoryName: Vocabulary
   questions:
-  - questionInfo: How do you say "your name is Giovanni"?
+  - questionInfo: 'Fill in the blank: faccio ___ il lavoro'
     questionType: 0
     questionImage: {fileID: 0}
     audioClip: {fileID: 0}
     videoClip: {fileID: 0}
     options:
-    - Mi chiamo Giovanni
-    - Vi chiamate Giovanni
-    - Ti chiami Giovanni
-    correctAns: Ti chiami Giovanni
-  - questionInfo: How do you say "Bye" in Italian?
+    - buono
+    - male
+    - cattivo
+    - Option 4
+    correctAns: male
+  - questionInfo: 'Translate the following: Esce per la scuola alle nove e trenta'
     questionType: 0
     questionImage: {fileID: 0}
     audioClip: {fileID: 0}
     videoClip: {fileID: 0}
     options:
-    - Addio
-    - Mio
-    - Quale
-    - Andare
-    correctAns: Addio
-  - questionInfo: How do you say "Rain" in Italian?
+    - He leaves for school at 9:30
+    - She leaves for school by 9:30
+    - You go to school at 9:30
+    - Option 4
+    correctAns: He leaves for school at 9:30
+  - questionInfo: 'Fill in the blank: Vado a scuola __ bicicletta, ma vado in palestra
+      __ piedi'
     questionType: 0
     questionImage: {fileID: 0}
     audioClip: {fileID: 0}
     videoClip: {fileID: 0}
     options:
-    - Neve
-    - Nebbia
-    - Pioggia
-    - Freddo
-    correctAns: Pioggia
+    - in, a
+    - in, in
+    - a, in
+    - Option 4
+    correctAns: in, a

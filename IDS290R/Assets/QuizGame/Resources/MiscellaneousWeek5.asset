@@ -10,29 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f611d797432e3f846885b2b12fde5f35, type: 3}
-  m_Name: ImageORVideoMatch
+  m_Name: MiscellaneousWeek5
   m_EditorClassIdentifier: 
   categoryName: ImageORVideomatcher
   questions:
-  - questionInfo: What is this object called in Italian?
-    questionType: 1
-    questionImage: {fileID: 21300000, guid: 535dfd9d631587c41b2363c001ae9c7f, type: 3}
+  - questionInfo: Prepositional articles combine prepositions and indefinite articles
+    questionType: 0
+    questionImage: {fileID: 0}
     audioClip: {fileID: 0}
     videoClip: {fileID: 0}
     options:
-    - tavolo
-    - sedia
-    - gatta
-    - ' fidanzata'
-    correctAns: tavolo
-  - questionInfo: Describe this action in Italian
-    questionType: 1
-    questionImage: {fileID: 21300000, guid: 30b90fd491d44094eb21621041b18d05, type: 3}
+    - vero
+    - falso
+    - BLANK
+    - BLANK
+    correctAns: falso
+  - questionInfo: "Select the correct prepositional article for \u201Cof the\u201D
+      Masc. Pl"
+    questionType: 0
+    questionImage: {fileID: 0}
     audioClip: {fileID: 0}
     videoClip: {fileID: 0}
     options:
-    - dormendo
-    - mangiare
-    - pianto
-    - ' volare'
-    correctAns: mangiare
+    - del
+    - dalle
+    - degli
+    - dei
+    correctAns: dalle

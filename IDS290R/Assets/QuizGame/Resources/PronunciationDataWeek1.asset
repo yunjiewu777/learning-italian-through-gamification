@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f611d797432e3f846885b2b12fde5f35, type: 3}
-  m_Name: PronunciationData
+  m_Name: PronunciationDataWeek1
   m_EditorClassIdentifier: 
   categoryName: Pronunciation
   questions:
@@ -36,14 +36,25 @@ MonoBehaviour:
     - Please!
     - Bye!
     correctAns: Please!
-  - questionInfo: What is the meaning of this word?
+  - questionInfo: Select the phrase that you hear
     questionType: 2
     questionImage: {fileID: 0}
     audioClip: {fileID: 8300000, guid: 181ba5f3fd87db549a037f3e7e826bb9, type: 3}
     videoClip: {fileID: 0}
     options:
-    - Hello!
-    - Thank you!
-    - Please!
-    - Bye!
-    correctAns: Thank you!
+    - mi chiamo Maria
+    - Si chiama Maria
+    - Ti chiami Maria
+    - Ci Chiami Maria
+    correctAns: Si chiama Maria
+  - questionInfo: 'Listen and select what is said '
+    questionType: 2
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 181ba5f3fd87db549a037f3e7e826bb9, type: 3}
+    videoClip: {fileID: 0}
+    options:
+    - Por favore
+    - Per favore
+    - Per favor
+    - Pur favor
+    correctAns: Per favore
