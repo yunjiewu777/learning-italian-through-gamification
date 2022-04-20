@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartStory : MonoBehaviour
+public class MainStory : MonoBehaviour
 {
 
     public VectorValue plyaerStorage;
 
     void OnEnable(){
-        SceneManager.LoadScene("Town");
+        SceneManager.LoadScene("MainMenu");
     }
 }

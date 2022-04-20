@@ -14,8 +14,10 @@ public class CategoryBtnScript : MonoBehaviour
 
     public void SetButton(string title, int totalQuestion)
     {
+        if (title == "Pronunciation")
+            btn.interactable = false;
         categoryTitleText.text = title;
-        scoreText.text = PlayerPrefs.GetInt(title, 0) + "/" + totalQuestion; //we get the score save for this category
+        scoreText.text = PlayerPrefs.GetInt(title+ (SaveManager.GetInstance().level.difficultyLevel).ToString(), 0) + "/" + totalQuestion; //we get the score save for this category
     }
 
 }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
 public class QuizGameUI : MonoBehaviour
 {
 #pragma warning disable 649
@@ -207,5 +206,19 @@ public class QuizGameUI : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+
+    public void UpdateScore()
+    {
+        int sum =0;
+        for (int i = 0; i < quizManager.QuizData.Count; i++)
+        {
+            sum = sum + PlayerPrefs.GetInt(quizManager.QuizData[i].categoryName + (SaveManager.GetInstance().level.difficultyLevel).ToString(), 0);            
+        }
+
+        if (sum > SaveManager.GetInstance().minigameT.score[SaveManager.GetInstance().level.difficultyLevel - 1])
+            SaveManager.GetInstance().minigameT.score[SaveManager.GetInstance().level.difficultyLevel - 1] = sum;
+    }
+
 
 }

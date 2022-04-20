@@ -30,6 +30,20 @@ public class QuizManager : MonoBehaviour
 
     public List<QuizDataScriptable> QuizData { get => quizDataList; }
 
+
+
+    private void Awake()
+    {
+        QuizData.Add(Resources.Load<QuizDataScriptable>("Quiz/Pro/PronunciationDataWeek"+ (SaveManager.GetInstance().level.difficultyLevel).ToString()));
+        QuizData.Add(Resources.Load<QuizDataScriptable>("Quiz/Mis/MiscellaneousWeek" + (SaveManager.GetInstance().level.difficultyLevel).ToString()));
+        QuizData.Add(Resources.Load<QuizDataScriptable>("Quiz/Voca/VocabDataWeek" + (SaveManager.GetInstance().level.difficultyLevel).ToString()));
+
+    }
+
+
+
+
+
     public void StartGame(int categoryIndex, string category)
     {
         currentCategory = category;
@@ -140,7 +154,7 @@ public class QuizManager : MonoBehaviour
         //eg:- if correctAnswerCount > PlayerPrefs.GetInt(currentCategory) then call below line
         //xd
         //Save the score
-        PlayerPrefs.SetInt(currentCategory, correctAnswerCount); //save the score for this category
+        PlayerPrefs.SetInt(currentCategory+(SaveManager.GetInstance().level.difficultyLevel).ToString(), correctAnswerCount); //save the score for this category
     }
 }
 

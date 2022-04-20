@@ -450,7 +450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPoints: 3
-  nxtProbBtn: {fileID: 0}
+  nxtProbBtn: {fileID: 403332371}
   levelCompleteUI: {fileID: 1140651191}
   pointsText: {fileID: 7987216}
   points: 0
