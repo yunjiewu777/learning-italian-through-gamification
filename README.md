@@ -1,5 +1,5 @@
 # Stuck in the Past
-Created by Ruby Wu, Abdullah Hamid and Julianna Celeste
+Due to a preposterous supernatural event,  you are sent back in time to 15th-century Italy.  In order to return to the present day, you have to master Italian through interactive tasks such as: shooting some asteroids, matching words to images, and more!
 
 Downloadable file and game community can be found at
 https://yunjiewu777.itch.io/stuckinthepast
