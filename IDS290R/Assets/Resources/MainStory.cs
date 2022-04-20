@@ -9,6 +9,6 @@ public class MainStory : MonoBehaviour
     public VectorValue plyaerStorage;
 
     void OnEnable(){
-        SceneManager.LoadScene("Town");
+        SceneManager.LoadScene("MainMenu");
     }
 }

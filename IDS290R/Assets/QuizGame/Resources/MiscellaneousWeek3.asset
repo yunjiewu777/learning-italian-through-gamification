@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f611d797432e3f846885b2b12fde5f35, type: 3}
   m_Name: MiscellaneousWeek3
   m_EditorClassIdentifier: 
-  categoryName: ImageORVideomatcher
+  categoryName: Miscellaneous
   questions:
   - questionInfo: When using adverbs of frequency (eg spesso, sempre, mai, etc) they
       usually go ___ the verb
