@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f611d797432e3f846885b2b12fde5f35, type: 3}
   m_Name: MiscellaneousWeek1
   m_EditorClassIdentifier: 
-  categoryName: ImageORVideomatcher
+  categoryName: Miscellaneous
   questions:
   - questionInfo: 'Select the correct form of essere: Io ___ Antonietta Di Pietro'
     questionType: 0
