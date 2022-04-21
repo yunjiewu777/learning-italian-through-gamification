@@ -6,7 +6,7 @@
 Ciao #speaker:Abdullah
     + [practica del parlare?]
         -> chat
-    + [sfida di gioco]
+    + [sfida]
         #scene:Word_Match_MainMenu
         -> DONE
     + [niente]
@@ -14,11 +14,11 @@ Ciao #speaker:Abdullah
         -> DONE
 
 === chat ===
-Mangio pane tostato a colazione. Cosa Mangi?
-    +[Mangio il pane alla marmellata]
+Mangio pane tostato a colazione. E tu?
+    +[Mangio il pane e marmellata]
         Non mi piace la marmellata
         ->DONE
-    +[Mangio macedonia]
+    +[Mangio una macedonia]
         Mi piace la macedonia
         ->DONE
 -> END

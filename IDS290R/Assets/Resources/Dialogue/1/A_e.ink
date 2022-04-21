@@ -29,7 +29,7 @@ do you work?
         Ah, very good
         ->DONE
     +[No, I do not work]
-        me too
+        neither do I
         ->DONE
 ===a===
 Do you speak Italian?

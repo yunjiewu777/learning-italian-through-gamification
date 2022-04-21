@@ -6,7 +6,7 @@
 Ciao #speaker:Ruby
     + [practica del parlare?]
         -> chat
-    + [sfida di gioco]
+    + [sfida]
         #scene:QuizGame_MainMenu
         -> DONE
     + [niente]
@@ -14,12 +14,12 @@ Ciao #speaker:Ruby
         -> DONE
 
 === chat ===
-Vado a casa tra 15 minuti. Fai?
+Vado a casa tra 15 minuti. Anche tu?
     +[Sì]
         Ci vediamo domani!
         ->DONE
-    +[No, ho lavoro]
-        Buona fortuna!
+    +[No, devo lavorare]
+        Buon lavoro!
         ->DONE
 
 -> END

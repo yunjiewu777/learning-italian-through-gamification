@@ -2,7 +2,7 @@
 
 
 === main===
-Question 1: Match the correct ending: we worked
+Question 1: Match the correct ending: we work
     + [A: Lavori]
         You chose Lavori #answer:wrong
     + [B: Lavoriamo]

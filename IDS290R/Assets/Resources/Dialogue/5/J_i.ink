@@ -6,7 +6,7 @@
 Ciao #speaker:Julianna
     + [practica del parlare?]
         -> chat
-    + [sfida di gioco]
+    + [sfida]
         #scene:AsteroidMainMenu
         -> DONE
     + [niente]
@@ -16,10 +16,10 @@ Ciao #speaker:Julianna
 === chat ===
 Sei andato dal cuoco ieri?
     +[Si, l’ho visto]
-        Bravissimo
+        Bene!
         ->DONE
     +[No, non l’ho visto]
-        Vai oggi
+        Vacci oggi
         ->DONE
 
 -> END

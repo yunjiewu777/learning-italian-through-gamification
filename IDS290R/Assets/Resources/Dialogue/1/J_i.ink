@@ -6,7 +6,7 @@
 Ciao #speaker:Julianna
     + [practica del parlare?]
         -> chat
-    + [sfida di gioco]
+    + [sfida]
         #scene:AsteroidMainMenu
         -> DONE
     + [niente]

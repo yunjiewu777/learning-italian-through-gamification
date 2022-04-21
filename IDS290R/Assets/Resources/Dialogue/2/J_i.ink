@@ -6,7 +6,7 @@
 Ciao #speaker:Julianna
     + [practica del parlare?]
         -> chat
-    + [sfida di gioco]
+    + [sfida]
         #scene:AsteroidMainMenu
         -> DONE
     + [niente]
@@ -16,10 +16,10 @@ Ciao #speaker:Julianna
 === chat ===
 Quale la lezione preferisci? Italiano o matematica?
     +[Preferisco Italiano]
-        Sono felice!
+        Che bello, anch’io!
         ->DONE
     +[Preferisco matematica]
-        la lezione di matematica non è divertente!
+        La lezione di matematica non è divertente!
         ->DONE
 
 -> END

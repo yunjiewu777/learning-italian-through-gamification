@@ -4,7 +4,7 @@
 
 // start converstaion
 Ciao #speaker:Librarian
-    + [risorse?]
+    + [hai bisogno di aiuto?]
         https://...............
         -> DONE
     + [niente]

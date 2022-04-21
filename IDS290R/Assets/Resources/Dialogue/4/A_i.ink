@@ -6,7 +6,7 @@
 Ciao #speaker:Abdullah
     + [practica del parlare?]
         -> chat
-    + [sfida di gioco]
+    + [sfida]
         #scene:Word_Match_MainMenu
         -> DONE
     + [niente]
@@ -14,9 +14,9 @@ Ciao #speaker:Abdullah
         -> DONE
 
 === chat ===
-Vieni sempre a lezione tardi?
-    +[No, non vengo mai a lezione tardi]
-        Buono, devi venire in tempo
+Arrivi sempre tardi a lezione?
+    +[No, non arrivo mai tardi a lezione]
+        Bene, bisogna essere puntuali!
         ->DONE
     +[Qualche volta arrivo con un minuto di ritardo]
         Qualche volte va bene

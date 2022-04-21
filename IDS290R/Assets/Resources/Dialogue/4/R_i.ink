@@ -6,7 +6,7 @@
 Ciao #speaker:Ruby
     + [practica del parlare?]
         -> chat
-    + [sfida di gioco]
+    + [sfida]
         #scene:QuizGame_MainMenu
         -> DONE
     + [niente]
@@ -14,7 +14,7 @@ Ciao #speaker:Ruby
         -> DONE
 
 === chat ===
-Che ora sono?
+Che ore sono?
     +[Sono le tredici]
         Ora di pranzo
         ->DONE

@@ -6,7 +6,7 @@
 Ciao #speaker:Ruby
     + [practica del parlare?]
         -> chat
-    + [sfida di gioco]
+    + [sfida]
         #scene:QuizGame_MainMenu
         -> DONE
     + [niente]
@@ -14,12 +14,12 @@ Ciao #speaker:Ruby
         -> DONE
 
 === chat ===
-Puoi leggere bene l’Italiano?
-    +[Si, posso leggere bene l’Italiano]
-        Bravissimo!
+Sai leggere bene l’Italiano?
+    +[Si, so leggere bene l’Italiano]
+        Ottimo!!!
         ->DONE
-    +[No, devo leggere molto lentamente]
-        Va bene
+    +[No, so leggere solo molto lentamente]
+        Non ti preoccupare, imparerai.
         ->DONE
 
 -> END

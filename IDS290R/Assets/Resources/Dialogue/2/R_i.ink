@@ -6,7 +6,7 @@
 Ciao #speaker:Ruby
     + [practica del parlare?]
         -> chat
-    + [sfida di gioco]
+    + [sfida]
         #scene:QuizGame_MainMenu
         -> DONE
     + [niente]
@@ -15,11 +15,11 @@ Ciao #speaker:Ruby
 
 === chat ===
 Quando hai scuola?
-    +[In la mattina]
+    +[La mattina]
         Dormi bene!
         ->DONE
     +[Domani pomeriggio]
-        Mangiare un buon pranzo prima della lezione
+        Fai un buon pranzo prima delle lezioni!
         ->DONE
 
 -> END

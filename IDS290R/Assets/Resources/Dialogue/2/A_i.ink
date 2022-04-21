@@ -6,7 +6,7 @@
 Ciao #speaker:Abdullah
     + [practica del parlare?]
         -> chat
-    + [sfida di gioco]
+    + [sfida]
         #scene:Word_Match_MainMenu
         -> DONE
     + [niente]
@@ -18,7 +18,7 @@ Dov’è la scuola?
     +[La scuola è al centro]
         Grazie
         ->DONE
-    +[Quale scuola? Quello a destra?]
-        Ah! Si, grazie
+    +[Quale scuola? Quella a destra?]
+        Ah! Sì, grazie
         ->DONE
 -> END

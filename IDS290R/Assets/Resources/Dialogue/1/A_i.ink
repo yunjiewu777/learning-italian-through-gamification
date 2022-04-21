@@ -6,7 +6,7 @@
 Ciao #speaker:Abdullah
     + [practica del parlare?]
         -> chat
-    + [sfida di gioco]
+    + [sfida]
         #scene:Word_Match_MainMenu
         -> DONE
     + [niente]
@@ -25,15 +25,15 @@ Ciao!
 
 === m ===
 Lavori?
-    +[Si, lavoro]
+    +[Sì, lavoro]
         Ah, molto bene
         ->DONE
     +[No, non lavoro]
-        Anch’io
+        Neanche io
         ->DONE
 ===a===
 Parli Italiano?
-    +[Si, parlo Italiano]
+    +[Sì, parlo Italiano]
         Ah, molto bene
         ->DONE
     +[No, non parlo Italiano]
@@ -43,10 +43,10 @@ Parli Italiano?
 ===e===
 Pronuncia di “che”?
     +[È “keh”]
-        Si, bravissimo
+        Sì, giusto!
         ->DONE
     +[È “chee”]
-        No, scusa
+        No, peccato!
         ->DONE
 
 

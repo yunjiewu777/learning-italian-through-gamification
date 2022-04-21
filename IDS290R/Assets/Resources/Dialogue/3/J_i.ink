@@ -6,7 +6,7 @@
 Ciao #speaker:Julianna
     + [practica del parlare?]
         -> chat
-    + [sfida di gioco]
+    + [sfida]
         #scene:AsteroidMainMenu
         -> DONE
     + [niente]
@@ -16,10 +16,10 @@ Ciao #speaker:Julianna
 === chat ===
 Cosa fai nel tuo tempo libero?
     +[Guardo sempre la televisione]
-        io non so cosa è una televisione
+        io non so cosa sia una televisione…
         ->DONE
-    +[I sometimes swim]
-        So nuotare
+    +[Nuoto qualche volta]
+        So nuotare molto bene, anche io nuoto
         ->DONE
 
 -> END

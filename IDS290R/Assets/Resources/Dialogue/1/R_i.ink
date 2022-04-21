@@ -6,7 +6,7 @@
 Ciao #speaker:Ruby
     + [practica del parlare?]
         -> chat
-    + [sfida di gioco]
+    + [sfida]
         #scene:QuizGame_MainMenu
         -> DONE
     + [niente]
@@ -26,14 +26,14 @@ Ciao!
 === m ===
 Pronuncia di “ci”?
     +[È “see”]
-        No, scusa
+        No, peccato!
         ->DONE
     +[È “chee”]
-        Si, bravissimo
+        Sì, giusto!
         ->DONE
 ===a===
 Ascolti musica?
-    +[Si, ascolto musica]
+    +[Sì, ascolto musica]
         Anch’io
         ->DONE
     +[No, non ascolto musica]
@@ -43,7 +43,7 @@ Ascolti musica?
 ===e===
 Come stai?
     +[Bene]
-        Buona
+        Mi fa piacere
         ->DONE
     +[Male]
         Mi dispiace
