@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   categoryName: Vocabulary
   questions:
-  - questionInfo: "Translate \u201Csono andato in vacanza la scorso settimana\u201D"
+  - questionInfo: "Translate \u201Csono andato in vacanza la scorsa settimana\u201D"
     questionType: 0
     questionImage: {fileID: 0}
     audioClip: {fileID: 0}

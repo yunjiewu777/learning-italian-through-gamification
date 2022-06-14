@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   categoryName: Vocabulary
   questions:
-  - questionInfo: "Select the correct way to say \u201Cthis\u201D for something far"
+  - questionInfo: "Select the correct way to say \u201Cthis\u201D for something near"
     questionType: 0
     questionImage: {fileID: 0}
     audioClip: {fileID: 0}

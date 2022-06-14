@@ -20,10 +20,10 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 181ba5f3fd87db549a037f3e7e826bb9, type: 3}
     videoClip: {fileID: 0}
     options:
-    - "chi \xE8 DaVinci"
-    - "che \xE8 DaVinc"
-    - "perch\xE9 \xE8 DaVinci"
-    - "C\u2019\xE8 DaVinci "
+    - "chi \xE8 DaVinci? "
+    - "che \xE8 DaVinci?"
+    - "perch\xE9 \xE8 DaVinci?"
+    - "C\u2019\xE8 DaVinci?"
     correctAns: "chi \xE8 DaVinci"
   - questionInfo: 'Listen and select what is said '
     questionType: 2
@@ -31,7 +31,7 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 181ba5f3fd87db549a037f3e7e826bb9, type: 3}
     videoClip: {fileID: 0}
     options:
-    - "tr\xE8"
+    - tre
     - tredici
     - sei
     - tre

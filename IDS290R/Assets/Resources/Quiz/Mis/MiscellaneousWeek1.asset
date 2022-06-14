@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   categoryName: Miscellaneous
   questions:
-  - questionInfo: 'Select the correct form of essere: Io ___ Antonietta Di Pietro'
+  - questionInfo: 'rect form of essere: Io ___ Giuliana'
     questionType: 0
     questionImage: {fileID: 0}
     audioClip: {fileID: 0}

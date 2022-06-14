@@ -23,9 +23,9 @@ MonoBehaviour:
     - buono
     - male
     - cattivo
-    - Option 4
+    - bravo
     correctAns: male
-  - questionInfo: 'Translate the following: Esce per la scuola alle nove e trenta'
+  - questionInfo: 'Translate the following: Esce per andare a scuola alle 9:30.'
     questionType: 0
     questionImage: {fileID: 0}
     audioClip: {fileID: 0}

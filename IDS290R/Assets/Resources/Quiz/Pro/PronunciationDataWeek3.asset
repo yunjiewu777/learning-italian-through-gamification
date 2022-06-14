@@ -20,8 +20,8 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 181ba5f3fd87db549a037f3e7e826bb9, type: 3}
     videoClip: {fileID: 0}
     options:
-    - Conosce il professore italiano
-    - Conosci il professore italiano
-    - Conosco il professore italiano
-    - Conosco i professori italiano
+    - Conosce il professore di italiano
+    - Conosci il professore di italiano
+    - Conosco il professore di italiano
+    - Conosco i professori di italiano
     correctAns: Conosci il professore italiano
