@@ -21,12 +21,12 @@ Downloadable file and game community can be found at [itch.io](https://yunjiewu7
 
 ### Technical
 
-Yunjie(Ruby) Wu [@yunjiewu777](https://github.com/yunjiewu777)
+- Yunjie(Ruby) Wu [@yunjiewu777](https://github.com/yunjiewu777)
 
-Abdullah Hamid [@abdullahhamid2](https://github.com/abdullahhamid2)
+- Abdullah Hamid [@abdullahhamid2](https://github.com/abdullahhamid2)
 
 ### Italian 
 
-Julianna Celeste
+- Julianna Celeste
 
 
